@@ -1,0 +1,9 @@
+# Copy to ./sites/isaac-says.caddy and replace the address with your domain name or
+# <ip with dashes>.sslip.io (for 203.0.113.7 that is 203-0-113-7.sslip.io).
+203-0-113-7.sslip.io {
+	encode gzip
+	reverse_proxy isaac-says-ui:8501 {
+		# Tells the app which visitor a request came from, so rate limits are per visitor.
+		header_up X-Real-IP {remote_host}
+	}
+}

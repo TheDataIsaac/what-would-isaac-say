@@ -1,0 +1,27 @@
+# Shared reverse proxy for every app on the server. Start it once:
+#   docker compose up -d
+#
+# Caddy terminates HTTPS and routes each site name to the right container. Apps join the external
+# "web" network and add one file to ./sites (see isaac-says.caddy.example). Only this stack
+# publishes ports 80 and 443.
+
+services:
+  caddy:
+    image: caddy:2
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./sites:/etc/caddy/sites:ro
+      - caddy-data:/data # certificates
+    networks:
+      - web
+    restart: unless-stopped
+
+networks:
+  web:
+    name: web
+
+volumes:
+  caddy-data:

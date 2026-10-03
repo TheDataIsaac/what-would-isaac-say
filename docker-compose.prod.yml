@@ -1,0 +1,50 @@
+# Public deployment of this app:
+#   docker compose -f docker-compose.prod.yml up -d --build
+#
+# Nothing here publishes a public port. The shared Caddy proxy (deploy/proxy) reaches the web
+# interface over the external "web" network, and the API is bound to the server's loopback
+# address, so the admin endpoints are reached through an SSH tunnel and never exposed.
+# Needs .env with OPENAI_API_KEY and ADMIN_API_KEY. See docs/DEPLOY.md.
+
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file: .env
+    environment:
+      TRUST_CLIENT_IP_HEADER: "true" # safe here: only the UI container can reach the API
+    volumes:
+      - app-data:/data
+    restart: unless-stopped
+
+  ui:
+    container_name: isaac-says-ui # the name Caddy uses to find it
+    networks:
+      - default
+      - web
+    build:
+      context: .
+      args:
+        UV_EXTRAS: "--extra ui"
+    command: ["streamlit", "run", "/app/.venv/lib/python3.12/site-packages/isaac_says/ui/streamlit_app.py",
+              "--server.port=8501", "--server.address=0.0.0.0", "--browser.gatherUsageStats=false"]
+    environment:
+      API_URL: http://api:8000
+      ENABLE_ADMIN_TAB: "0"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=4)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+networks:
+  web:
+    external: true
+
+volumes:
+  app-data:

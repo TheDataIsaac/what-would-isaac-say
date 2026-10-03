@@ -1,0 +1,15 @@
+# Keep the build context small and never send secrets or local state into an image.
+.git
+.venv
+.env
+.env.*
+!.env.example
+__pycache__
+*.pyc
+.ruff_cache
+data/chroma
+data/*.db
+data/*.sqlite*
+docs
+scripts
+.github

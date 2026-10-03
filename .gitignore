@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+*.egg-info/
+
+# Generated data (rebuild the index with `isaac-says ingest`)
+data/chroma/
+data/*.db
+data/*.db-*
+data/*.sqlite
+data/*.sqlite-*
+# The saved copy of the newsletter posts is committed, so the index can be rebuilt offline.
+!data/raw/
+
+# Editors and OS
+.vscode/
+.DS_Store
