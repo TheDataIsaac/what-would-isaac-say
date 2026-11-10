@@ -46,11 +46,16 @@ def test_short_section_is_joined_to_its_neighbour():
 
 def test_long_section_is_split_into_numbered_parts():
     """A section far over the size limit is split between paragraphs into numbered parts."""
-    html = "<h2>Long</h2>" + paragraph("delta", 100) * 6
+    words = ["one", "two", "three", "four", "five", "six"]
+    html = "<h2>Long</h2>" + "".join(paragraph(word, 100) for word in words)
     chunks = chunk_post(make_post(html))
     assert len(chunks) > 1
-    assert chunks[0].heading == "Long (part 1)"
+    expected = [f"Long (part {n})" for n in range(1, len(chunks) + 1)]
+    assert [c.heading for c in chunks] == expected
     assert all(len(c.text) <= MAX_CHARS for c in chunks)
+    # Every paragraph lands in some part, so nothing is lost in the split.
+    all_text = " ".join(c.text for c in chunks)
+    assert all(f"{word} {word}" in all_text for word in words)
 
 
 def test_subscribe_boxes_and_boilerplate_are_dropped():
@@ -70,5 +75,7 @@ def test_every_real_post_gives_chunks_of_a_sensible_size():
     posts = load_snapshot(SNAPSHOT)
     assert posts
     for post in posts:
-        for chunk in chunk_post(post):
+        chunks = chunk_post(post)
+        assert chunks, post.slug
+        for chunk in chunks:
             assert 100 < len(chunk.text) < MAX_CHARS * 1.5
