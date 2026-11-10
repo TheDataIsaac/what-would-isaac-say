@@ -1,11 +1,11 @@
 # What Would Isaac Say?
 
 **A grounded AI assistant for the [Explain the Data](https://explainthedata.substack.com) newsletter.**
-It answers questions using only what the newsletter says, proves every answer with quotes that code
+It answers questions using only what the newsletter says, backs every answer with quotes that code
 has checked against the original text, reviews a reader's dashboard or report against the
 newsletter's principles, and admits when it does not know.
 
-**Live demo:** <https://2-31-15-0.sslip.io> (a small server with a daily question cap, so it may
+**Live demo:** <https://ask.isaacjoresanya.com> (a small server with a daily question cap, so it may
 decline questions late in the day; conversations are stored, so please keep them non-confidential).
 
 ![A question answered with verified sources](docs/images/chat-answer.jpg)
@@ -16,7 +16,7 @@ A chatbot on top of a blog has an obvious problem: language models invent things
 For a newsletter about *explaining data honestly*, an assistant that makes up quotes would be
 embarrassing. So this project is built around one rule:
 
-> The assistant may only say what it can prove from Isaac's own text.
+> The assistant may only say what it can back up with quotes from Isaac's own text.
 
 Everything else follows from that rule. Three independent checks make it refuse instead of guess,
 and every citation is verified by plain code rather than trusted.
@@ -98,7 +98,7 @@ Details, including the full graph and the life of one request, are in [docs/ARCH
 | Database | SQLite (WAL) through async SQLAlchemy 2.0, repository pattern | `db/` |
 | Tool interface | MCP server (`MCPServer`, stdio) | `mcp_server.py` |
 | Web interface | Streamlit, talking to the API over HTTP only | `ui/` |
-| Code style | ruff (lint and format), GitHub Actions CI | `.github/` |
+| Code quality | ruff (lint and format), pytest, GitHub Actions CI | `tests/`, `.github/` |
 | Deployment | Multi-stage Dockerfile, compose files, Caddy for HTTPS, non-root user, healthchecks, spend caps | root, `deploy/` |
 
 ## Project layout
@@ -116,6 +116,8 @@ src/isaac_says/
   ui/                  Streamlit page and the API client it uses
   mcp_server.py        the MCP server
   cli.py               the `isaac-says` command
+tests/                 pytest tests (no API key needed)
+evals/                 the 88 evaluation questions and the script that runs them
 docs/                  architecture, decisions, deployment
 deploy/proxy/          shared Caddy reverse proxy for the production server
 scripts/analytics.sql  SQL over the operational database
@@ -126,10 +128,39 @@ data/raw/posts.jsonl   the committed snapshot of the 60 posts
 
 ```bash
 uv run ruff check . && uv run ruff format --check .
+uv run pytest
 
 sqlite3 data/app.db < scripts/analytics.sql            # usage analytics
 uv run isaac-says purge-threads                        # delete conversations idle past the retention period
 ```
+
+## Tests and evaluation
+
+```bash
+uv run pytest                      # tests, no API key or network needed
+uv run python evals/run_eval.py    # evaluation, uses the real model (about 15 minutes, under 10 cents)
+```
+
+The tests cover quote verification, splitting posts by heading, the steps that decide when to
+refuse, and the reply models.
+
+The evaluation asks 88 questions, each in a new conversation, and checks the kind of reply:
+60 questions the newsletter answers, 12 unrelated ones (such as the capital of France), 10 near-topic
+ones it never covers (such as a Power BI DAX measure), and 6 requests to review a piece of work. It
+writes the table and every miss to [evals/results.md](evals/results.md). It measures whether the
+assistant answers or refuses correctly. It does not judge how good an answer is.
+
+Latest run (10 November 2026, `gpt-5.6-luna`):
+
+| What it should do | Result |
+|---|---|
+| Answer newsletter questions | 58/60 |
+| Refuse unrelated questions | 12/12 |
+| Refuse near-topic questions | 9/10 |
+| Review a piece of work | 6/6 |
+
+The model's answers vary a little between runs, and an earlier run the same day lost three
+newsletter questions to API timeouts.
 
 ## Limitations and what comes next
 
@@ -156,4 +187,6 @@ admin view.
 
 ## About this project
 
-Built by Isaac Oresanya as a portfolio project for applied AI engineering. The newsletter content belongs to its author. This is an AI assistant and is not Isaac himself.
+Built by Isaac Oresanya as a portfolio project for applied AI engineering. This is an AI assistant and is not Isaac himself.
+
+The code is under the [MIT licence](LICENSE). The newsletter text in `data/raw/` belongs to its author and is not covered by the licence.
