@@ -1,0 +1,88 @@
+{"id": "in_scope-001", "category": "in_scope", "question": "How can I make my data presentation more memorable?"}
+{"id": "in_scope-002", "category": "in_scope", "question": "How should I organize a dashboard so people understand the main point and what to do next?"}
+{"id": "in_scope-003", "category": "in_scope", "question": "How should I plan my dashboard layout before building it?"}
+{"id": "in_scope-004", "category": "in_scope", "question": "How can I explain whether a metric is good or bad?"}
+{"id": "in_scope-005", "category": "in_scope", "question": "How can I make dashboard colors update automatically when metrics change?"}
+{"id": "in_scope-006", "category": "in_scope", "question": "Which chart should I use to show patterns and comparisons in my data?"}
+{"id": "in_scope-007", "category": "in_scope", "question": "How many filters should I put on a dashboard before it becomes confusing?"}
+{"id": "in_scope-008", "category": "in_scope", "question": "What should I include so my dashboard actually helps people make decisions?"}
+{"id": "in_scope-009", "category": "in_scope", "question": "How can I make my charts easier for people to read?"}
+{"id": "in_scope-010", "category": "in_scope", "question": "Why do businesses still rely on spreadsheets instead of newer data tools?"}
+{"id": "in_scope-011", "category": "in_scope", "question": "What should I think about before making a chart?"}
+{"id": "in_scope-012", "category": "in_scope", "question": "Which chart should I use to make my data easy to compare?"}
+{"id": "in_scope-013", "category": "in_scope", "question": "How should I arrange the information in my chart so people understand it quickly?"}
+{"id": "in_scope-014", "category": "in_scope", "question": "How can I simplify a crowded dashboard so people understand it quickly?"}
+{"id": "in_scope-015", "category": "in_scope", "question": "How can I tell whether strange data is an error or something meaningful?"}
+{"id": "in_scope-016", "category": "in_scope", "question": "How do I decide which parts of my data report are actually worth keeping?"}
+{"id": "in_scope-017", "category": "in_scope", "question": "How can I make my analysis meaningful and recommend what people should do next?"}
+{"id": "in_scope-018", "category": "in_scope", "question": "How should I present disappointing results without making everyone defensive?"}
+{"id": "in_scope-019", "category": "in_scope", "question": "When should I show a percentage versus the actual numbers?"}
+{"id": "in_scope-020", "category": "in_scope", "question": "How should I explain a forecast when the data isn’t strong enough to be certain?"}
+{"id": "in_scope-021", "category": "in_scope", "question": "What should I include in my projects besides the final charts to show I can analyze data?"}
+{"id": "in_scope-022", "category": "in_scope", "question": "How should I present mixed results so people understand the problem and know what to do?"}
+{"id": "in_scope-023", "category": "in_scope", "question": "How can I explain the same metric differently to different teams?"}
+{"id": "in_scope-024", "category": "in_scope", "question": "How can I tell whether a sudden drop is normal or something I need to fix?"}
+{"id": "in_scope-025", "category": "in_scope", "question": "When should I use a table instead of a chart for my data?"}
+{"id": "in_scope-026", "category": "in_scope", "question": "How can I make my charts easier to understand at a glance?"}
+{"id": "in_scope-027", "category": "in_scope", "question": "How can I measure something customer-related that isn’t directly visible?"}
+{"id": "in_scope-028", "category": "in_scope", "question": "How can I add context so people understand unusual changes in my charts?"}
+{"id": "in_scope-029", "category": "in_scope", "question": "Where can I find practical advice for getting better at working with data?"}
+{"id": "in_scope-030", "category": "in_scope", "question": "When should I avoid putting two different metrics on the same chart?"}
+{"id": "in_scope-031", "category": "in_scope", "question": "How do I simplify a chart without making it harder to understand?"}
+{"id": "in_scope-032", "category": "in_scope", "question": "How can charts help me spot problems in a messy dataset?"}
+{"id": "in_scope-033", "category": "in_scope", "question": "How can I tell whether my data shows a real problem or just random noise?"}
+{"id": "in_scope-034", "category": "in_scope", "question": "How can I spot people missing from my survey data?"}
+{"id": "in_scope-035", "category": "in_scope", "question": "How can I make my data work more useful to the business?"}
+{"id": "in_scope-036", "category": "in_scope", "question": "How do I explain both the benefits and drawbacks of a data-driven recommendation?"}
+{"id": "in_scope-037", "category": "in_scope", "question": "What should I put at the top of my dashboard so people understand it quickly?"}
+{"id": "in_scope-038", "category": "in_scope", "question": "What skills should I build to stay valuable as AI handles more analyst tasks?"}
+{"id": "in_scope-039", "category": "in_scope", "question": "How can I describe a trend without claiming one thing caused another?"}
+{"id": "in_scope-040", "category": "in_scope", "question": "How can I tell when one chart is leaving out an important part of the story?"}
+{"id": "in_scope-041", "category": "in_scope", "question": "How can I tell whether my dashboard metrics actually measure what they claim?"}
+{"id": "in_scope-042", "category": "in_scope", "question": "How can I explain my data project so recruiters understand why it matters?"}
+{"id": "in_scope-043", "category": "in_scope", "question": "How do I choose the right dashboard for the people who will use it?"}
+{"id": "in_scope-044", "category": "in_scope", "question": "When should I use slides instead of a dashboard to explain data?"}
+{"id": "in_scope-045", "category": "in_scope", "question": "How should I present my analysis so people understand the main takeaway quickly?"}
+{"id": "in_scope-046", "category": "in_scope", "question": "How can I explain charts so people quickly understand the main takeaway?"}
+{"id": "in_scope-047", "category": "in_scope", "question": "How can I tell whether my data shows a real cause or just two things happening together?"}
+{"id": "in_scope-048", "category": "in_scope", "question": "How can I write chart titles that quickly explain what the data means?"}
+{"id": "in_scope-049", "category": "in_scope", "question": "How can I make my data charts easier to understand without adding unnecessary design elements?"}
+{"id": "in_scope-050", "category": "in_scope", "question": "Which data preparation choices should I explain so people can trust my analysis?"}
+{"id": "in_scope-051", "category": "in_scope", "question": "When should I avoid using boxes to compare categories in a dashboard?"}
+{"id": "in_scope-052", "category": "in_scope", "question": "How do I choose the right bar chart for comparing totals, parts, or percentages?"}
+{"id": "in_scope-053", "category": "in_scope", "question": "How can I turn a simple dataset into a project that helps someone make a business decision?"}
+{"id": "in_scope-054", "category": "in_scope", "question": "Which basic calculations should I start with before building a complicated business report?"}
+{"id": "in_scope-055", "category": "in_scope", "question": "How do I make sure everyone means the same thing when talking about a metric?"}
+{"id": "in_scope-056", "category": "in_scope", "question": "Why does business data get messy, and what should I check before trusting it?"}
+{"id": "in_scope-057", "category": "in_scope", "question": "How can I tell whether my customer records belong to the same person?"}
+{"id": "in_scope-058", "category": "in_scope", "question": "How can I make my forecasts honest without making them useless?"}
+{"id": "in_scope-059", "category": "in_scope", "question": "What should I compare a business result against to tell if it’s actually good?"}
+{"id": "in_scope-060", "category": "in_scope", "question": "What’s the difference between what we planned, what we expect, and what actually happened?"}
+{"id": "out_of_scope-061", "category": "out_of_scope", "question": "How do I tune the hyperparameters of an XGBoost model?"}
+{"id": "out_of_scope-062", "category": "out_of_scope", "question": "What is the capital of France?"}
+{"id": "out_of_scope-063", "category": "out_of_scope", "question": "Explain how the transformer attention mechanism works."}
+{"id": "out_of_scope-064", "category": "out_of_scope", "question": "How do I set up a Kubernetes cluster on AWS?"}
+{"id": "out_of_scope-065", "category": "out_of_scope", "question": "What is the difference between L1 and L2 regularization?"}
+{"id": "out_of_scope-066", "category": "out_of_scope", "question": "How do I train a neural network in PyTorch?"}
+{"id": "out_of_scope-067", "category": "out_of_scope", "question": "Who won the 2022 football World Cup?"}
+{"id": "out_of_scope-068", "category": "out_of_scope", "question": "Which index funds should I invest in for retirement?"}
+{"id": "out_of_scope-069", "category": "out_of_scope", "question": "What are the common symptoms of the flu?"}
+{"id": "out_of_scope-070", "category": "out_of_scope", "question": "What is a good recipe for jollof rice?"}
+{"id": "out_of_scope-071", "category": "out_of_scope", "question": "How do I write a Dockerfile for a Node.js app?"}
+{"id": "out_of_scope-072", "category": "out_of_scope", "question": "How do I file taxes as a freelancer in the United States?"}
+{"id": "adjacent-073", "category": "adjacent", "question": "How do I write a DAX measure for year-over-year growth in Power BI?"}
+{"id": "adjacent-074", "category": "adjacent", "question": "How do I set up row-level security in a Power BI report?"}
+{"id": "adjacent-075", "category": "adjacent", "question": "How do I build a sales forecast with an ARIMA model?"}
+{"id": "adjacent-076", "category": "adjacent", "question": "How do I speed up a slow SQL query by adding indexes?"}
+{"id": "adjacent-077", "category": "adjacent", "question": "How do I design a star schema for a data warehouse?"}
+{"id": "adjacent-078", "category": "adjacent", "question": "How do I fill in missing values with pandas in Python?"}
+{"id": "adjacent-079", "category": "adjacent", "question": "Which hex colors make a dashboard palette work for people with color vision deficiency?"}
+{"id": "adjacent-080", "category": "adjacent", "question": "How do I write a VLOOKUP formula in Excel?"}
+{"id": "adjacent-081", "category": "adjacent", "question": "How should I prepare for a data analyst job interview?"}
+{"id": "adjacent-082", "category": "adjacent", "question": "What salary should I ask for as a junior data analyst?"}
+{"id": "review-083", "category": "review", "question": "Please review my sales dashboard for regional managers. It uses a dual-axis line chart with revenue on the left axis and profit margin on the right axis, in two bright colors. It is used in a weekly meeting to decide which regions to visit."}
+{"id": "review-084", "category": "review", "question": "Feedback please on my customer report. The main visual is a treemap of 300 customers sized by revenue, and I want the executives to see who our top ten customers are."}
+{"id": "review-085", "category": "review", "question": "Can you review my product mix chart? It is a 3D pie chart of revenue by product with 14 slices and a legend on the side. It goes into the monthly report for the sales director."}
+{"id": "review-086", "category": "review", "question": "Review my operations dashboard. It shows 15 KPI cards across the top, eight charts below and two tables. Managers open it on Monday to decide what to fix this week."}
+{"id": "review-087", "category": "review", "question": "I would like feedback on my report. The chart titles are Sales, Chart 2 and Customers. The report is emailed to department heads who have about two minutes to read it."}
+{"id": "review-088", "category": "review", "question": "Review my KPI summary. It says conversion rate is 73% and nothing else on that card. Managers read it on their phones between meetings."}
