@@ -31,16 +31,17 @@ NO_MORE_DETAIL = "That is all the detail I have. Please go ahead and review it b
 MAX_FOLLOW_UPS = 2  # the agent asks at most two follow-up questions before it reviews anyway
 
 
-async def ask(service: ChatService, question: str) -> tuple[str, float]:
-    """Ask one question in a new conversation. Return the reply kind and the estimated cost."""
+async def ask(service: ChatService, question: str, costs: list[float]) -> str:
+    """Ask one question in a new conversation and return the reply kind.
+    Each turn's cost is added to `costs` straight away, so it still counts if a later turn fails."""
     result = await service.run_turn(None, question)
-    cost = result.usage.cost_usd
+    costs.append(result.usage.cost_usd)
     for _ in range(MAX_FOLLOW_UPS):
         if result.reply.kind != "needs_input":
             break
         result = await service.run_turn(result.thread_id, NO_MORE_DETAIL)
-        cost += result.usage.cost_usd
-    return result.reply.kind, cost
+        costs.append(result.usage.cost_usd)
+    return result.reply.kind
 
 
 async def main() -> None:
@@ -54,15 +55,15 @@ async def main() -> None:
     totals = dict.fromkeys(EXPECTED, 0)
     misses = []
     errors = 0
-    total_cost = 0.0
+    costs = []
     for number, item in enumerate(questions, 1):
         category = item["category"]
         try:
-            kind, cost = await ask(service, item["question"])
+            kind = await ask(service, item["question"], costs)
         except Exception as error:  # one failed API call should not stop a long run
-            kind, cost = f"error: {type(error).__name__}", 0.0
+            # The failed call's cost is unknown, but turns that already finished stay counted.
+            kind = f"error: {type(error).__name__}"
             errors += 1
-        total_cost += cost
         totals[category] += 1
         if kind == EXPECTED[category][0]:
             correct[category] += 1
@@ -74,7 +75,7 @@ async def main() -> None:
         "# Evaluation results",
         "",
         f"Run on {date.today().isoformat()} with `{settings.llm_model}` "
-        f"(reasoning: {settings.reasoning_effort}). Estimated model cost: ${total_cost:.2f}.",
+        f"(reasoning: {settings.reasoning_effort}). Estimated model cost: ${sum(costs):.2f}.",
         f"Questions that failed with an API error (counted as misses): {errors}.",
         "",
         "| What it should do | Result |",
