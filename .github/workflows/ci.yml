@@ -1,6 +1,6 @@
 name: CI
 
-# Checks the code style on every push and pull request. No API key is needed.
+# Checks the code style and runs the tests on every push and pull request. No API key is needed.
 on:
   push:
     branches: [main]
@@ -25,4 +25,7 @@ jobs:
 
       - name: Check formatting
         run: uv run ruff format --check .
+
+      - name: Run tests
+        run: uv run pytest
 
