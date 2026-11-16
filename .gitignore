@@ -22,3 +22,6 @@ data/*.sqlite-*
 # Editors and OS
 .vscode/
 .DS_Store
+
+# Every reply from the last evaluation run (evals/run_eval.py)
+evals/output/

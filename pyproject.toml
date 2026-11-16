@@ -51,7 +51,7 @@ module-name = "isaac_says"
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-src = ["src"]
+src = ["src", "evals"]  # evals: so its own modules (judge, report, stats) sort as local imports
 
 [tool.ruff.lint]
 # E/F = pycodestyle + pyflakes, I = import order, UP = modern syntax, B = likely bugs,
