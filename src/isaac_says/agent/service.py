@@ -11,6 +11,7 @@ from langgraph.graph.state import CompiledStateGraph
 from langgraph.types import Command
 
 from isaac_says.config import Settings
+from isaac_says.domain.models import RetrievedChunk
 from isaac_says.domain.replies import NeedsInputReply, Reply, ReplyAdapter
 
 
@@ -28,6 +29,8 @@ class TurnResult:
     latency_ms: int
     usage: Usage = field(default_factory=Usage)
     intent: str = ""
+    # The newsletter excerpts the reply was written from. The evaluation's judge reads them.
+    excerpts: list[RetrievedChunk] = field(default_factory=list)
 
 
 class ChatService:
@@ -62,6 +65,7 @@ class ChatService:
             latency_ms=int((time.perf_counter() - started) * 1000),
             usage=usage,
             intent=state.values.get("intent", ""),
+            excerpts=[RetrievedChunk.model_validate(c) for c in state.values.get("relevant", [])],
         )
 
     def _usage_from(self, metadata: dict) -> Usage:
