@@ -19,5 +19,10 @@ def build_chat_service(
 ) -> tuple[ChatService, VectorIndex]:
     """Return the chat service and the search index it uses."""
     index = VectorIndex(settings.chroma_dir, make_embeddings(settings))
-    nodes = AgentNodes(OpenAIClient(settings), index, settings, gap_recorder)
+    llm = OpenAIClient(settings)
+    # The same model with its own reasoning setting, for the evidence check only.
+    grade_llm = OpenAIClient(
+        settings.model_copy(update={"reasoning_effort": settings.grade_reasoning_effort})
+    )
+    nodes = AgentNodes(llm, index, settings, gap_recorder, grade_llm=grade_llm)
     return ChatService(build_graph(nodes, checkpointer), settings), index

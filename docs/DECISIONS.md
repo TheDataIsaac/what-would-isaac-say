@@ -129,6 +129,10 @@ second timeout for small calls and 40 seconds for long ones.
 **Why.** Reasoning off is faster and cheaper. The Responses API is the endpoint this model supports for tools plus reasoning settings. The timeouts
 follow from measurement: requests stalled for 40 to 60 seconds in roughly 10 to 25 percent of calls
 while normal calls take about 1.5 seconds, and the retry after a timeout succeeds immediately.
+**Exception (16 November 2026).** The evidence check (the grade step) runs with low reasoning
+(`grade_reasoning_effort`). With reasoning off, its yes or no flipped between runs on the same
+excerpts. Low reasoning made it steadier on the questions that flipped and added about 0.1 seconds,
+and a 5-run evaluation showed no regressions. Medium made it refuse questions the excerpts answer.
 
 ## 14. MCP is pinned to major version 2
 

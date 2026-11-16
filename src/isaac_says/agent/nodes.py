@@ -109,8 +109,10 @@ class AgentNodes:
         retriever: VectorIndex,
         settings: Settings,
         gap_recorder: GapRecorder | None = None,
+        grade_llm: OpenAIClient | None = None,
     ) -> None:
         self.llm = llm
+        self.grade_llm = grade_llm or llm  # the evidence check's client (see config.py)
         self.retriever = retriever
         self.settings = settings
         self.gap_recorder = gap_recorder
@@ -198,7 +200,7 @@ class AgentNodes:
         """Ask the model if the excerpts are enough to answer. If not, keep none of them."""
         candidates = [RetrievedChunk.model_validate(c) for c in state["candidates"]]
         user = f"Request:\n{_request_context(state)}\n\nExcerpts:\n{format_excerpts(candidates)}"
-        grade = await self.llm.structured(EvidenceGrade, prompts.GRADE, user)
+        grade = await self.grade_llm.structured(EvidenceGrade, prompts.GRADE, user)
         wanted = set(grade.relevant_chunk_ids)
         relevant = [c for c in candidates if c.chunk.chunk_id in wanted]
         if not grade.sufficient:

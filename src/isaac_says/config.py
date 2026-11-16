@@ -39,6 +39,9 @@ class Settings(BaseSettings):
     # Models. Reasoning "none" is faster and cheaper.
     llm_model: str = "gpt-5.6-luna"
     reasoning_effort: Literal["none", "low", "medium", "high"] = "none"
+    # The evidence check (the grade step) is the exception. Without reasoning, its yes or no
+    # flipped between runs on the same excerpts. "medium" made it refuse questions it should answer.
+    grade_reasoning_effort: Literal["none", "low", "medium", "high"] = "low"
     embedding_model: str = "text-embedding-3-small"
     # Seconds to wait for the model before giving up and retrying.
     llm_timeout_seconds: float = Field(default=12.0, gt=0)
