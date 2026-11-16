@@ -91,7 +91,7 @@ Details, including the full graph and the life of one request, are in [docs/ARCH
 |---|---|---|
 | Language and packaging | Python 3.12, `uv`, `pyproject.toml`, lockfile | root |
 | Agent orchestration | LangGraph (explicit graph, checkpointed memory, `interrupt` for clarifications) | `agent/` |
-| Language model | OpenAI `gpt-5.6-luna`, reasoning off, Responses API, structured outputs | `agent/llm.py` |
+| Language model | OpenAI `gpt-5.6-luna`, reasoning off (low for the evidence check), Responses API, structured outputs | `agent/llm.py` |
 | Data validation | Pydantic v2 (models, settings, LLM outputs, API bodies, discriminated unions) | everywhere |
 | Search | Chroma + `text-embedding-3-small`, cosine similarity | `retrieval/` |
 | HTTP API | FastAPI: dependencies, middleware, SSE streaming, API-key auth, rate limiting | `api/` |
@@ -117,7 +117,7 @@ src/isaac_says/
   mcp_server.py        the MCP server
   cli.py               the `isaac-says` command
 tests/                 pytest tests (no API key needed)
-evals/                 the 88 evaluation questions and the script that runs them
+evals/                 the 88 evaluation questions, the evaluation script, its judge and the judge check
 docs/                  architecture, decisions, deployment
 deploy/proxy/          shared Caddy reverse proxy for the production server
 scripts/analytics.sql  SQL over the operational database
@@ -137,35 +137,70 @@ uv run isaac-says purge-threads                        # delete conversations id
 ## Tests and evaluation
 
 ```bash
-uv run pytest                      # tests, no API key or network needed
-uv run python evals/run_eval.py    # evaluation, uses the real model (about 15 minutes, under 10 cents)
+uv run pytest                                 # tests, no API key or network needed
+uv run python evals/run_eval.py --runs 5      # evaluation, uses the real models (about 8 minutes, under $1)
 ```
 
 The tests cover quote verification, splitting posts by heading, the steps that decide when to
 refuse, and the reply models.
 
-The evaluation asks 88 questions, each in a new conversation, and checks the kind of reply:
-60 questions the newsletter answers, 12 unrelated ones (such as the capital of France), 10 near-topic
-ones it never covers (such as a Power BI DAX measure), and 6 requests to review a piece of work. It
-writes the table and every miss to [evals/results.md](evals/results.md). It measures whether the
-assistant answers or refuses correctly. It does not judge how good an answer is.
+The evaluation has 88 questions: 60 the newsletter answers, 12 unrelated ones (such as the capital
+of France), 10 near-topic ones it never covers (such as a Power BI DAX measure), and 6 requests to
+review a piece of work. It asks every question several times, each time in a new conversation,
+and checks every reply in two ways:
 
-Latest run (10 November 2026, `gpt-5.6-luna`):
+* **The kind of reply.** Did it answer, refuse or review when it should have? Plain code checks this.
+* **The quality of each answer.** A second, stronger model (the judge, `gpt-6.1-terra`) reads the
+  question, the excerpts the answer was written from and the answer, and checks that the answer
+  responds to the question and says nothing the excerpts don't support.
 
-| What it should do | Result |
-|---|---|
-| Answer newsletter questions | 58/60 |
-| Refuse unrelated questions | 12/12 |
-| Refuse near-topic questions | 9/10 |
-| Review a piece of work | 6/6 |
+Asking several times matters because the model doesn't give the same reply every time. The report
+shows each pass rate with a 95% range, lists the questions that only fail sometimes, and gives the
+judge's reason for every answer it failed. It's written to [evals/results.md](evals/results.md).
 
-The model's answers vary a little between runs, and an earlier run the same day lost three
-newsletter questions to API timeouts.
+`evals/check_judge.py` checks the judge itself: it picks 30 judged answers for a person to grade
+before looking at the judge's verdict, then reports how often the two agree.
+
+On 16 November the 30 answers (in [evals/judge_check.csv](evals/judge_check.csv)) were graded by a
+second model, Claude Opus, which saw only the question, the answer and the excerpts. It agreed with
+the judge on 24 of 30 (80%, likely range 63% to 90%). Of the six disagreements, the judge was right
+on one, too strict on three and too lenient on two:
+
+* Too strict: it failed an example that is in the excerpts word for word, a paraphrase of what an
+  excerpt says, and the newsletter's name, which the assistant gets from its own instructions and
+  the judge never sees.
+* Too lenient: it passed advice the excerpts give for one situation applied to another, and a fixed
+  order where the excerpt says to use "whatever order makes sense for your goal".
+
+So the judge's errors go both ways and roughly cancel out in its pass rate, but a single verdict
+can be wrong. A second model is not a person, and 30 answers is a small sample, so a person grading
+them is still the better check.
+
+Runs on 16 November 2026, 5 runs each, `gpt-5.6-luna`, before and after one fix: giving the
+evidence check (the step that decides whether the excerpts are enough to answer) low reasoning.
+Every other step still runs with reasoning off.
+
+| What it should do | Before | After | Likely range after (95%) |
+|---|---|---|---|
+| Answer newsletter questions | 296/300 | 297/300 | 97% to 100% |
+| Refuse unrelated questions | 60/60 | 60/60 | 94% to 100% |
+| Refuse near-topic questions | 45/50 | 50/50 | 93% to 100% |
+| Review a piece of work | 30/30 | 30/30 | 89% to 100% |
+
+The judge passed 292 of 301 answers before and 290 of 297 after (97% and 98%). The clear gain is
+"How should I prepare for a data analyst job interview?", which was answered 5 times out of 5
+before and refused 5 times out of 5 after. The one-question gain on newsletter questions is within
+the noise.
+
+The single run on 10 November missed two newsletter questions. Over five runs, one of them
+(`in_scope-022`) failed 4 times out of 5 and the other (`in_scope-033`) never failed, so a single
+run can't tell an unlucky question from a broken one. The cause is described below.
 
 ## Limitations and what comes next
 
 * **One author, 60 posts.** The assistant is only as broad as the newsletter. That is the design, but it means many questions get an honest "not covered".
-* **Quotes are verified, the sentences around them are not.** Code guarantees the quotes are real. It cannot check that the sentences around them are faithful to the post.
+* **Quotes are verified, the sentences around them are not.** Code guarantees the quotes are real. It cannot check that the sentences around them are faithful to the post. The evaluation's judge measures this instead: 2 to 3% of answers add something the excerpts don't say, usually a small example or an advice point stretched to a new situation.
+* **The evidence check can still flip.** For the same question and the same six excerpts, the step that decides whether the excerpts are enough says yes on one try and no on the next. "How should I present mixed results…" was refused 4 times out of 5 with reasoning off and 3 times out of 5 with low reasoning, though one of Isaac's posts covers exactly that. Medium reasoning made it refuse more often, and rewording the prompt made reviews start failing, so neither is in.
 * **Response time is slow for a chat.** A reply usually takes around 8 to 13 seconds, because it makes four to five model calls one after another, and the provider sometimes stalls. Searching while routing, and skipping the grader when the top score is very high, are the obvious next optimisations.
 * **Substack's API is undocumented.** It could change. The snapshot keeps the project running if it does.
 * **Conversations are stored.** Every message in a thread, including work submitted for review, is
