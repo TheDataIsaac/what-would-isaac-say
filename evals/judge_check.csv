@@ -1,0 +1,2426 @@
+﻿id,question,answer,excerpts,my_grade,my_reason,judge_grade,judge_reason
+in_scope-005 run 1,How can I make dashboard colors update automatically when metrics change?,"In “Stop Being the Dashboard Color Police,” Isaac recommends conditional formatting. Set rules that link colors to metric values, such as red below target, yellow for a middle range, and green for strong performance. The dashboard will then update its colors automatically as the data changes.
+
+Start with one key metric and test the traffic-light rule for a week. Keep the rules consistent, use no more than three or four main colors, and set thresholds that match business reality. You can later add gradients or more connected logic.","[chunk_id: stop-being-the-dashboard-color-police#6] Stop Being the Dashboard Color Police > Your Next Move
+Don’t try to fix everything at once.
+
+Start with one key metric. Add a traffic light rule; red, yellow, green. Let it run for a week. See what changes.
+
+Then slowly add more rules, gradients, and connected logic. Make formatting part of your data story.
+
+You’ll spend less time fixing visuals and more time finding insight.
+
+Because the goal isn’t to eliminate your role. It’s to stop wasting brainpower on things a dashboard can do . So you can focus on what really matters.
+
+---
+
+[chunk_id: stop-being-the-dashboard-color-police#2] Stop Being the Dashboard Color Police > Real-Life Ways to Use It
+Here are four practical formatting systems that work in real dashboards:
+
+1. The Traffic Light System.
+
+Use red, yellow, and green to show performance at a glance. Go further by using gradients ; light green for “barely made it,” dark green for “crushing it.”
+
+2. The Heat Map.
+
+Great for comparing lots of values across products, time periods, or regions. Let your eyes do the scanning. The hottest or coldest spots pop out instantly.
+
+---
+
+[chunk_id: stop-being-the-dashboard-color-police#1] Stop Being the Dashboard Color Police > What Is Conditional Formatting?
+Conditional formatting is like giving your dashboard a brain.
+
+It’s a simple set of rules that change the look of your data based on the values inside. If a number drops below target, it turns red. If it hits a new high, it glows green, all on its own.
+
+Think of it as a traffic light system for your metrics. You set the rules once, and your visuals update automatically as the data changes.
+
+It’s not just about making things colorful. It’s about creating visual cues your brain can understand instantly before you even read the number.
+
+---
+
+[chunk_id: stop-being-the-dashboard-color-police#4] Stop Being the Dashboard Color Police > ❌ Too Many Colors
+A rainbow dashboard looks fun but tells no story. Stick to 3–4 consistent colors max.
+
+❌ Only Red and Green.
+
+Real data has nuance. Add yellow or use gradients to show shades of performance.
+
+❌ Changing Color Rules Too Often.
+
+If your red this month means what yellow meant last month, no one will trust the dashboard. Consistency is key.
+
+❌ Arbitrary Thresholds.
+
+Make sure your rules reflect business reality. If 85% is a win for your team, don’t make it look like a fail just because it’s under 90%.",pass,"Conditional formatting, traffic-light start, 3-4 colors and realistic thresholds all in excerpts.",pass,The answer addresses automatic color updates and is supported by the excerpts.
+in_scope-009 run 5,How can I make my charts easier for people to read?,"In “The Beginner’s Guide to Cleaner Data Visuals,” Isaac recommends simple changes that reduce noise and make the message easier to scan:
+
+- Use text that is at least 12pt, with larger titles and headers.
+- Left-align labels, legends, and text blocks.
+- Start with a simple chart. Remove anything that does not add value.
+- Make important data stand out with color and size. Keep axes and gridlines light.
+- Use readable fonts, enough contrast, and colors that work for colorblind readers.
+- Round numbers to sensible formats, such as 2.8M instead of 2,847,293.
+- Add useful context, such as benchmarks, targets, or reference lines.
+
+Isaac’s main point is to improve clarity, not remove every visual element. Keep anything that helps people understand the chart faster.","[chunk_id: the-beginners-guide-to-cleaner-data#0] The Beginner’s Guide to Cleaner Data Visuals > The Beginner’s Guide to Cleaner Data Visuals
+Not every chart needs to be perfect. But every chart should be easy to read.
+
+That doesn't mean using bold colors or flashy designs. It means making smart, simple choices that help your message land. Small things, like font size or spacing, can do a lot of heavy lifting.
+
+And you don't need to be a designer to get it right.
+
+These six tweaks are simple, practical, and tested. Try them out, and see how your charts feel less noisy and more helpful.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#4] The Chart Building Process That Changed How I Present Data > Step 4: Build Your Chart
+Okay, now you get to do the fun part. But even here, there's a right way and a wrong way.
+
+Start simple. Don't add every bell and whistle your tool offers. Build the most basic version of your chart first, then add complexity only if it helps tell your story better.
+
+Focus on the data, not the decorations. Your chart should highlight the important stuff and fade everything else into the background. That means:
+
+- Make your data stand out with color and size
+
+- Make your axes and gridlines light and subtle
+
+- Only label the things that matter
+
+- Remove any elements that don't add value
+
+Make it readable. Use fonts big enough to read easily. Pick colors that work for colorblind folks. Make sure there's enough contrast.
+
+---
+
+[chunk_id: the-beginners-guide-to-cleaner-data#1] The Beginner’s Guide to Cleaner Data Visuals > 1. Make Your Font Bigger
+This one's so simple it hurts. Yet we still squint at tiny text all the time.
+
+Nobody likes playing detective just to read your axis labels. When you bump up your font size, people can actually focus on your insights instead of straining to see what you wrote.
+
+If you think your font is big enough, make it bigger. Start with 12pt minimum for any text in your charts, and go even bigger for titles and headers. Your audience will thank you.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#5] The Chart Building Process That Changed How I Present Data > Step 5: Format Like a Pro
+This is where good charts become great charts. The formatting is what makes people want to keep looking and actually understand what you're showing them.
+
+Clean up your axes. Round your numbers to sensible values. If you're showing millions of dollars, don't display 2,847,293. Show 2.8M instead. Your audience will thank you.
+
+Add context. A line that goes up is nice. A line that goes up 23% while the industry average went down 5% is a story. Add reference lines, benchmarks, or targets that help people understand if your numbers are good or bad.
+
+Use color with purpose. Don't make everything rainbow colored just because you can. Use color to highlight what's important. Make the good stuff green and the bad stuff red only if that makes sense. Sometimes gray is your best friend.
+
+---
+
+[chunk_id: youre-probably-deleting-too-much#4] You're Probably Deleting Too Much From Your Charts > Clarity is King
+We need to change our goal.
+
+Don’t try to use the least amount of ink possible. Instead, try to make it easy to read
+
+Think about the “Signal-to-Noise” ratio. The Signal is the data and the clues that help you understand the numbers. The Noise is anything that distracts you.
+
+A light gridline that helps you read a number is a signal.
+
+An arrow pointing to a key insight is a signal.
+
+If adding a little extra ink, like a border or a background color, helps your boss understand the chart in two seconds instead of ten, then do it.
+
+---
+
+[chunk_id: the-beginners-guide-to-cleaner-data#3] The Beginner’s Guide to Cleaner Data Visuals > 3. Left-Align Your Labels
+Center-aligned text might look fancy, but it's harder to scan quickly.
+
+When everything starts from the same point, your brain doesn't have to work as hard to find where each line begins.
+
+Left-align your labels, legends, and text blocks to create a clean edge that your eye can follow. Check your current charts and see if your labels are all over the place. Line them up on the left and watch how much easier they become to read.",pass,"Every tip is in the excerpts, though some come from the chart-building post rather than the one named.",fail,"The advice answers the question and is supported by the excerpts, but the answer attributes the full list to “The Beginner’s Guide to Cleaner Data Visuals.” Several recommendations appear only in excerpts from other posts."
+in_scope-037 run 2,What should I put at the top of my dashboard so people understand it quickly?,"Put your most important insight at the top left. Use the whole top row as a headline, with the key numbers and a short message that explains what happened. People should understand the current situation in five seconds or less. Keep details, long tables and extra notes lower down.","[chunk_id: your-dashboard-has-a-reading-order#2] Your Dashboard Has A Reading Order > Treating Your Dashboard Like A Story
+You can fix this easily by changing how you lay things out. Every good story has a clear start, a middle, and an end. Your dashboard should work the exact same way.
+
+The top left corner is your best spot. It is the very first place eyes land, so the whole top row should act like a giant headline. This is your beginning.
+
+Put your most important numbers right here to tell people what happened in just five seconds. A simple message like “Sales are down 12% this month” is clear and impossible to miss.
+
+The middle of your screen is where you back up your big headline. This is the perfect home for your main charts, trends, and comparisons. You are simply showing your audience why that top number looks the way it does.
+
+It gives them the background they need to fully understand the story.
+
+Finally, the bottom of the page is the end of your story. This is where the fine print goes. Save your long tables and extra notes for this area. People will gladly scroll down when they want to dig into those smaller details.
+
+When you set up your page this way, everything feels completely natural, and your audience never has to guess where to look.
+
+---
+
+[chunk_id: your-dashboard-has-a-reading-order#0] Your Dashboard Has A Reading Order > Your Dashboard Has A Reading Order
+Most people look at a screen the same way they read a book.
+
+They start at the top left, move their eyes to the right, and then drop down a line. They do this over and over until they reach the bottom of the page.
+
+It is just how our brains work.
+
+This means the moment someone opens your dashboard, their eyes are already moving. They will treat whatever is in the top left as the most important thing.
+
+The question is, did you put the right thing there?
+
+---
+
+[chunk_id: your-dashboard-has-a-reading-order#3] Your Dashboard Has A Reading Order > The Best Way To Help Your Audience
+You might think you are just someone who works with data, but you are actually a designer. The way you place your charts changes how easily people understand your hard work.
+
+Your dashboard already has a reading order, even if you did not plan it. What matters is if that order helps your audience or slows them down.
+
+Start at the top left. Put your most important insight there. Build the rest of the story around it. And the next time someone says your dashboard is confusing, you’ll know exactly where to look first.
+
+---
+
+[chunk_id: the-best-dashboard-youll-ever-use#4] The Best Dashboard You’ll Ever Use Has Only 4 Metrics > How to Apply This to Your Dashboards
+So how do you make your data dashboards more like car dashboards? Here are some practical steps:
+
+Start with the core question. What's the one most important thing this dashboard needs to answer? That's your speedometer. Everything else is secondary.
+
+Use the 5-second rule. Someone should be able to look at your dashboard and understand the current situation in five seconds or less. If they can't, you've got too much going on.
+
+Group related information. Just like car dashboards group engine-related warnings together, group your related metrics. Don't scatter similar information all over the place.
+
+Make status clear. Use colors, icons, and visual cues to show whether things are good, bad, or need attention.
+
+Hide the details. Not everything needs to be visible all the time. Let people drill down into details when they need them, but keep the main view clean.
+
+The hardest part of building better dashboards isn’t technical. It’s mental.
+
+It’s the ability to not show everything. To trust that clarity beats completeness. To design with purpose, not panic.
+
+Remember, the goal isn't to show off how much data you can collect.
+
+The goal is to help people make better decisions, faster.
+
+---
+
+[chunk_id: steai-the-layout-before-you-build#3] SteaI the layout before you build the dashboard > Step 3: Sketch Before You Click
+This step separates the pros from the amateurs, and it takes maybe 10 minutes.
+
+Grab whatever's handy – a notebook, the back of an envelope, PowerPoint, even a napkin. Draw boxes where things should go:
+
+- Big box at the top for your key metrics (your KPIs that everyone cares about most)
+
+- Medium boxes for your main charts
+
+- Small boxes for filters and controls
+
+- Don't forget space between everything
+
+Think of it like planning where furniture goes in a room before you start moving heavy stuff around.
+
+Here's what to consider while sketching:
+
+- What's the most important thing? Put it where people look first (top left, then top center)
+
+- What goes together? Group related charts near each other
+
+- How will people use this? Put filters where they're easy to find but not in the way",pass,"Top-left headline row, five-second rule and details lower down all supported.",pass,The answer addresses what to put at the top and is supported by the excerpts.
+in_scope-052 run 5,"How do I choose the right bar chart for comparing totals, parts, or percentages?","Start with what the reader should compare. Use a grouped bar chart when the goal is to compare categories or parts closely. Use a regular stacked bar chart when the total matters and the parts explain that total. Use a 100% stacked bar chart when the total size is not the focus and you want to compare percentage shares or mix.
+
+Watch the trade-offs. Stacked bars make middle sections harder to compare. A 100% stacked chart hides actual totals because every bar has the same length. A grouped chart can make readers focus on small bars and miss the total. The chart should follow the message.","[chunk_id: the-bar-chart-mistake-most-analysts#1] The Bar Chart Mistake Most Analysts Make > What A Bar Chart Is Actually Supposed To Do
+A bar chart is not just there to show numbers. Its real job is to help people compare things.
+
+That sounds simple, but it changes how you think about chart choice.
+
+Before you pick a chart, you need to ask one simple question: what should the reader compare?
+
+Should they compare one category against another? Should they compare how smaller parts add up to a total? Should they compare the percentage share of each part?
+
+Those are different questions. And each one needs a different type of bar chart.
+
+---
+
+[chunk_id: the-bar-chart-mistake-most-analysts#3] The Bar Chart Mistake Most Analysts Make > Stacked Bar Charts Show The Total And The Parts
+A stacked bar chart is better when the total matters.
+
+Instead of placing bars side by side, a stacked bar chart places smaller bars on top of each other. Together, those smaller pieces form one full bar.
+
+This makes the chart useful when you want people to see the total amount and also understand what made up that total.
+
+For example, let’s say you are showing monthly sales, split by product type. A stacked bar chart can help the reader see total sales for each month. At the same time, the colors inside each bar show how each product type added to the total.
+
+That is useful when the story is about both the big picture and the parts inside it.
+
+But stacked bar charts have a weakness. They are not great when you want people to compare each piece closely.
+
+The first part of the bar is usually easy to compare because it starts on a flat line. But the blocks in the middle or at the top do not start from the same place. This makes them harder to compare with the eye.
+
+So if you want the reader to compare Product B across five months, a stacked bar chart may not be the best choice. Product B may sit in the middle of each bar, and each piece may start from a different point. The reader now has to work harder to compare them.
+
+That does not mean stacked bars are bad. Use them when the total matters and the parts are there to support the story. Do not use them when the main goal is exact comparison between each part.
+
+---
+
+[chunk_id: the-bar-chart-mistake-most-analysts#5] The Bar Chart Mistake Most Analysts Make > Choosing Well Is A Communication Skill
+Picking the right chart is not just about knowing the tool. It is about helping people understand.
+
+It means you are thinking about the person who will read the chart. It means you are asking what they need to understand first. It means you are choosing what is clear over what you always do.
+
+If you use a 100% stacked bar chart when totals matter, the reader may miss that one group is much larger than another.
+
+If you use a stacked bar chart when people need to compare each part, the reader may struggle with the middle sections.
+
+If you use a grouped bar chart when the total matters, the reader may focus too much on each small bar and miss the bigger picture.
+
+The data does not change when you switch from one chart type to another. But the story can change a lot.
+
+That is why analysts need to slow down before building the chart.
+
+Start with the question.
+
+Then choose the chart.
+
+The chart should follow the message, not the other way around.
+
+---
+
+[chunk_id: the-bar-chart-mistake-most-analysts#4] The Bar Chart Mistake Most Analysts Make > 100% Stacked Bar Charts Show Share
+A 100% stacked bar chart looks like a regular stacked bar chart, but it does something very different.
+
+In a normal stacked bar chart, the full height of the bar shows the actual total. A bigger bar means a bigger total.
+
+In a 100% stacked bar chart, every bar has the same full length. Each bar represents 100%. The pieces inside the bar show the share of that total.
+
+This chart is useful when the total size is not the main point. The focus is the mix.
+
+For example, let’s say you are comparing traffic sources for three websites. One website may have 10,000 visits. Another may have 100,000 visits. But maybe your goal is not to compare total visits. Maybe your goal is to compare where the traffic came from.
+
+In that case, a 100% stacked bar chart can help. It can show what share came from search, social, email, or paid ads.
+
+This chart helps answer questions like: Which website depends more on search? Which one gets a higher share from email? How does the traffic mix change across websites?
+
+That is where 100% stacked bars are useful. They help people compare shares.
+
+But they also come with a risk.
+
+Because every bar is the same length, the chart can hide the actual total. A small group and a large group can look equal, even when they are not.
+
+That can be dangerous when the total size matters.
+
+For example, 50% of 100 customers is not the same as 50% of 10,000 customers. The percentage is the same, but the meaning is very different.
+
+So use 100% stacked bar charts when the share is the main message. Avoid them when the actual total is important to the decision.",pass,"Stacked, 100% stacked and grouped trade-offs follow the excerpts; grouped-for-close-comparison is implied.",pass,"The answer addresses totals, parts, and percentages, and its guidance and trade-offs are supported by the excerpts."
+in_scope-028 run 3,How can I add context so people understand unusual changes in my charts?,"Add short annotations directly to the chart when there is a spike, dip, strange pattern, or important takeaway. Say what happened and, when you know it, why. For example, label a jump “2013: New policy introduced” or a dip “Holiday spike” or “School break dip.”
+
+You can also add reference lines, benchmarks, or targets so people can judge whether a change is good or bad. For recurring patterns, compare the current period with last month and the same month last year, and note what is normal for that season before explaining what is different.","[chunk_id: your-chart-cant-explain-itself-but#4] Your Chart Can't Explain Itself (But It Should) > When Should You Use Them?
+You don’t need to write a novel on every slide. That would be messy. But you should use annotations for the big moments:
+
+- Spikes and Dips: Did the numbers jump or crash? Explain what happened (e.g., “Server outage” or “Holiday Sale”).
+
+- Goals: If you are trying to hit a target, draw a line and label it “Goal.”
+
+- Key Takeaways: If there is one thing you want people to remember, write it right on the chart.
+
+- Weird patterns: If something strange shows up in the data, explain it.
+
+---
+
+[chunk_id: your-chart-cant-explain-itself-but#1] Your Chart Can't Explain Itself (But It Should) > Charts Don’t Explain Themselves
+We like to think a clean chart can explain itself. We think good colors and a clear title are enough.
+
+But usually, context is everything.
+
+A line going up looks like success, until you realize it’s counting customer complaints. A sudden drop looks like failure, unless you know a system outage caused it.
+
+When you’re not there, people usually do one of three things::
+
+- They guess the story (and get it wrong).
+
+- They waste time hunting for answers.
+
+- They ignore the data completely.
+
+You need to leave your voice behind when you’re not there.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#5] The Chart Building Process That Changed How I Present Data > Step 5: Format Like a Pro
+This is where good charts become great charts. The formatting is what makes people want to keep looking and actually understand what you're showing them.
+
+Clean up your axes. Round your numbers to sensible values. If you're showing millions of dollars, don't display 2,847,293. Show 2.8M instead. Your audience will thank you.
+
+Add context. A line that goes up is nice. A line that goes up 23% while the industry average went down 5% is a story. Add reference lines, benchmarks, or targets that help people understand if your numbers are good or bad.
+
+Use color with purpose. Don't make everything rainbow colored just because you can. Use color to highlight what's important. Make the good stuff green and the bad stuff red only if that makes sense. Sometimes gray is your best friend.
+
+---
+
+[chunk_id: your-chart-cant-explain-itself-but#2] Your Chart Can't Explain Itself (But It Should) > Here’s What I Mean by Annotations
+An annotation is just text you add directly to your chart to explain what is happening.
+
+It isn’t fancy. It is literally you writing on the chart to make sure people understand what they are seeing. It works like a small road sign. It tells the reader: “Look here. This is important. Here is why.”
+
+Let’s look at how this works in real life.
+
+What Happened vs Why It Happened.
+
+Take a look at the image below.
+
+On the left, you see a line chart. It shows the number of studies funded. The line goes up and down, and then shoots way up in 2013.
+
+The chart tells you what happened (numbers went up). But it doesn’t tell you why .
+
+Now look at the right side. Same data. Same chart. But this time, there is a simple note: “2013: New policy introduced.”
+
+Boom. Now you get it. You don’t have to guess. The policy change lines up with the jump. That little bit of text turned a boring graph into a clear story.
+
+---
+
+[chunk_id: the-line-doesnt-always-go-up#4] The Line Doesn't Always Go Up > 4. Talk to People Who Know the History
+People who have been in the company for years know the rhythm.
+
+You will hear things like:
+
+- “Q3 is always slow.”
+
+- “Engagement drops after big launches.”
+
+- “Sales fall during school exams.”
+
+Mix human memory with your data. It gives you strong context. These insights save you hours of digging through data.
+
+How to Use This in Your Actual Work.
+
+Once you spot a seasonal pattern, use it to guide your work.
+
+Build simple baselines. Look at two to three years of data and note when dips and peaks usually happen. Add key factors like holidays or weather. Even one simple note like ‘Sales fall in Q3 and rise again in Q4’ helps a lot.
+
+Add context to your dashboards. Never show one number alone. Include last month and the same month last year. A month to month dip looks scary until you see year to year growth.
+
+Annotate your charts. Add small notes like “Holiday spike” or “School break dip.” This helps everyone understand the pattern without guessing.
+
+Lead with context. When you present results, start by saying what is normal for that season. Then explain what is new or different. This keeps the focus on insight, not panic.",pass,"Annotations, examples, reference lines and seasonal comparisons all come from excerpts.",fail,"The answer addresses chart context, but the example of labeling a dip “Holiday spike” is not supported by the excerpts."
+in_scope-023 run 5,How can I explain the same metric differently to different teams?,"Isaac suggests keeping the metric fixed but changing the story to fit the team and its decision. Start with what that team cares about. For product, UX, or support teams, frame conversion as a user experience issue: 5 out of 100 visitors buy, while 95 leave. Then focus on where users struggle, such as the sign-up flow or unclear value, rather than treating the number as only a score.","[chunk_id: the-gift-and-risk-of-data-storytelling#0] The Gift and Risk of Data Storytelling > The Gift and Risk of Data Storytelling
+You look at a dashboard and see this:
+
+Conversion rate this month: 5.0 percent Conversion rate last month: 4.5 percent
+
+Nice. It went up.
+
+But what does that really mean?
+
+- A marketer might say, “The new campaign is working.”
+
+- A product manager might say, “Users are finding the value faster.”
+
+- A finance lead might say, “Revenue is growing.”
+
+- A support lead might say, “Tickets will go up again.”
+
+All of them are reacting to the same metric.
+
+This is why one metric can feel powerful and confusing at the same time. The number is fixed. The story around it is not.
+
+The good news is that you can use this on purpose. You can shape the story to fit the audience and the decision.
+
+To show this, let us walk through three stories for the same conversion rate.
+
+---
+
+[chunk_id: the-gift-and-risk-of-data-storytelling#2] The Gift and Risk of Data Storytelling > Story 1: The user story
+This story looks at the people behind the metric. It cares about what they see, where they get stuck, and how the product feels.
+
+You might say:
+
+“Out of every 100 visitors, 5 end up paying for our product. So 95 people come, look around, and leave without buying. Our job is to understand why those 95 drop off.”
+
+The metric now becomes a signal of user experience, not just a score.
+
+The same metric supports a story like this:
+
+“Our conversion rate is 5 percent, but it is not only a win. It is also a mirror that shows how many visitors we fail to help. If we fix the sign up flow and make our value clearer in the first 30 seconds, we can raise this number by making the experience better, not just by shouting louder in ads.”
+
+Use this story when you talk with UX designers, product managers, and customer support. They care about friction and want to know where users are struggling.",pass,"Fixed metric, story fitted to audience and the user-story framing are in the excerpt; covers one team but useful.",pass,Both checks pass: the answer addresses tailoring the metric’s story and stays within the excerpts.
+in_scope-034 run 1,How can I spot people missing from my survey data?,"In “The Data You're Not Looking At,” Isaac says to compare the number of responses with the number of people who received the survey. The gap shows how many people are missing. Then check whether missing responses cluster by age, region or another group. Those patterns may reveal that your survey method is missing certain people. Also study where people drop off and ask why people opted out. Don’t treat missing responses as random or ignore them. They may point to frustration, poor access or a problem with how the survey reaches people.","[chunk_id: the-data-youre-not-looking-at#3] The Data You're Not Looking At > How To See What Everyone Else Misses
+You don’t need fancy tools to fix this. You just need to change how you look at the screen.
+
+Every time you analyze data, ask yourself one simple question: Who or what is NOT in this dataset?
+
+Here are some ways to find the answer.
+
+- Compare your data to the whole group. If you have 500 survey responses, check how many people you sent the survey to. The gap between those two numbers is important.
+
+- Look at your funnel. Don’t just celebrate the people who converted. Study the people who dropped off at each step. Where did they leave? Why did they leave?
+
+- Check for patterns in who’s missing. Are certain types of people not showing up in your data? Maybe younger users aren’t responding. Maybe people from certain regions aren’t buying. That’s a clue.
+
+- Ask why people opted out. If someone unsubscribed from your emails or left your platform, find out why. The people who leave often know more than the people who stay.
+
+Beyond The Chart.
+
+Anyone can make a chart based on the numbers in front of them. That is the easy part.
+
+But the best analysts are the ones who notice what is missing. They look at the empty rows and realize something is wrong.
+
+Don’t just count the hands that are raised. Ask why the other hands are down.
+
+---
+
+[chunk_id: the-data-youre-not-looking-at#1] The Data You're Not Looking At > We Do This Too
+We do the same thing with data. We look at the survey responses we got. But we forget about the people who never answered.
+
+We study the customers who bought our product. But we ignore the ones who looked and walked away.
+
+We analyze the employees who stayed at the company. But we don’t ask the ones who left why they quit.
+
+We’re looking at the planes that came back. We’re missing the ones that crashed.
+
+---
+
+[chunk_id: the-data-youre-not-looking-at#2] The Data You're Not Looking At > Listen to What's Not There
+Let me show you what I mean.
+
+Your team sends out a survey. You get 1,000 responses. You analyze them and find out that 90% of people are happy with your product. Amazing, right?
+
+Wait.
+
+How many people got the survey? 10,000.
+
+That means 9,000 people didn’t even bother to reply.
+
+Those 9,000 silent people might be so frustrated they did not want to reply. They might already be looking for a different product. They might be your real problem.
+
+But if you only look at the 1,000 responses, you’ll never know.
+
+The empty rows are trying to tell you something. You just have to listen.
+
+---
+
+[chunk_id: the-dirty-secret-every-senior-analyst#0] The Dirty Secret Every Senior Analyst Knows (But Won't Tell You) > The Dirty Secret Every Senior Analyst Knows (But Won't Tell You)
+Data doesn't just appear. Humans create it.
+
+And humans are weird, lazy, creative, and unpredictable.
+
+That means every dataset you open is a mirror.
+
+Not just of business processes, but of human behavior, pressure, habits, and workarounds. Clean it too fast, and you risk scrubbing away the most important clues.
+
+This is the side of data work nobody talks about in tutorials.
+
+The part that feels more like psychology than Python.
+
+Let’s get into it.
+
+In a sales dataset, if all the missing commission amounts belong to one manager, that's not a data quality issue. That's either a problem with their reporting system or they're hiding something.
+
+If survey responses are missing for specific age groups, that's not random. That's telling you something about how those people interact with your survey method.
+
+If timestamps cluster around certain hours, that's revealing when people actually use your product vs. when you think they do.
+
+The pattern in what's NOT there is just as important as what IS there.
+
+That person who bought 847 units of your product. Don't remove them. Find them. They might be running a business you didn't know existed.
+
+Those users with session times of 14 hours. They're not errors. They're power users who left your app open, which tells you something important about your product's stickiness.",fail,"""poor access"" is not in the excerpts, which name frustration and the survey method, not access.",fail,"The answer addresses how to spot missing survey respondents, but “poor access” is not stated or clearly implied by the excerpts."
+in_scope-019 run 1,When should I show a percentage versus the actual numbers?,"Use percentages when you need to compare things of different sizes, show growth rates, or explain a share relative to a whole. They make counts easier to compare and add context, such as showing whether 200 cancellations are serious for a company’s customer base.
+
+Show the actual numbers when the starting base is small. Percentages can make a change from 2 sign-ups to 6 look like a major breakthrough, even though the result is still small. In practice, use both when possible: the percentage shows the rate of change, while the actual numbers keep the scale clear.","[chunk_id: a-million-dollars-at-a-startup-vs#4] A Million Dollars at a Startup vs. Amazon > So When Should You Use Each?
+Here’s the simple rule I follow:
+
+Use Percentages When:.
+
+- You’re comparing things of different sizes. Percentages let you compare apples to oranges (or businesses of different scales).
+
+- You want to show growth rates. If you’re tracking performance over time, percentages show the speed of change.
+
+- Your base number is large enough to matter. If you’re starting with at least 100-1,000 data points (depending on context), percentages start making sense.
+
+- You want to normalize data. Percentages help you say “this is how big this is relative to the whole.”
+
+---
+
+[chunk_id: average-and-sum-make-all-the-money#4] Average And Sum Make All The Money > Percentages Make Numbers Fair To Compare
+Percentages help people compare things clearly.
+
+If 50 people bought from 100 visitors, that is a 50% conversion rate. If 500 people bought from 10,000 visitors, that is a 5% conversion rate.
+
+The second group has more buyers, but the first group performs better.
+
+Without percentages, people may chase the bigger number and miss the better result.
+
+Percentages help answer business questions like these:
+
+What share of users became customers? What percent of sales came from this product? What percent of customers canceled?
+
+Percentages turn plain counts into meaning. They help teams compare large groups and small groups. They also help people understand risk.
+
+For example, 200 canceled customers may sound bad. But if the company has 200,000 customers, that may not be a crisis. If it has 500 customers, that is a serious problem.
+
+The same number can mean different things depending on what you compare it to. Percentages make that clear.
+
+---
+
+[chunk_id: a-million-dollars-at-a-startup-vs#2] A Million Dollars at a Startup vs. Amazon > When Percentages Make You Look Silly
+Percentages are great for showing relative change . They help you understand growth or decline in relation to where you started.
+
+But here’s the catch: percentages amplify small numbers and hide context from big ones.
+
+Example: The Misleading Small Base.
+
+Let’s say you’re running a new marketing campaign.
+
+- Week 1: You got 2 sign-ups
+
+- Week 2: You got 6 sign-ups
+
+You could say: “We increased sign-ups by 200%!”
+
+Technically true. But also... meaningless. You went from 2 people to 6 people. That’s not really a breakthrough.
+
+When your starting number is tiny, percentages make everything look like a miracle. But in reality, you haven’t proven anything yet.
+
+Don’t use percentages when your base number is small. You’ll look like you’re trying too hard to impress people, and anyone who knows data will see right through it.
+
+---
+
+[chunk_id: a-million-dollars-at-a-startup-vs#1] A Million Dollars at a Startup vs. Amazon > The Problem Most People Don’t Talk About
+Percentages and absolute numbers tell completely different stories. And most people, including analysts, managers, and executives, use them wrong.
+
+They either hide behind percentages to make small wins look massive, or they throw out big numbers without context to confuse people.
+
+So let me break down when to use each and become the person in the room who actually understands what the data is saying.",fail,"""In practice, use both when possible: the percentage shows the rate of change, while the actual numbers keep the scale clear"" is not stated in the excerpts.",fail,"The answer addresses when to use each, but “use both when possible” is not supported by the excerpts, which advise against using percentages when the base is small."
+in_scope-013 run 4,How should I arrange the information in my chart so people understand it quickly?,"Arrange information based on what you want people to understand. For performance or comparison, order values from highest to lowest. For change or trends, use time order. For a natural sequence, use logical order.
+
+Put the most important insight at the top left, and build the rest of the chart or dashboard around it. Write the title as a headline that states the main finding, then use the chart to support it.
+
+Keep the design simple. Highlight key data with color and size, make axes and gridlines subtle, label only what matters, and remove anything that adds no value.","[chunk_id: the-chart-building-process-that-changed#4] The Chart Building Process That Changed How I Present Data > Step 4: Build Your Chart
+Okay, now you get to do the fun part. But even here, there's a right way and a wrong way.
+
+Start simple. Don't add every bell and whistle your tool offers. Build the most basic version of your chart first, then add complexity only if it helps tell your story better.
+
+Focus on the data, not the decorations. Your chart should highlight the important stuff and fade everything else into the background. That means:
+
+- Make your data stand out with color and size
+
+- Make your axes and gridlines light and subtle
+
+- Only label the things that matter
+
+- Remove any elements that don't add value
+
+Make it readable. Use fonts big enough to read easily. Pick colors that work for colorblind folks. Make sure there's enough contrast.
+
+---
+
+[chunk_id: the-simple-trick-that-makes-your#4] The Simple Trick That Makes Your Data 10x Clearer > Quick Decision Framework
+If you are stuck on ordering, use these questions
+
+- Am I showing performance or comparison? ⇒ Use ranking (highest to lowest)
+
+- Am I showing change or trends? ⇒ Use time order
+
+- Does this follow a natural sequence? ⇒ Use logical order
+
+Good data ordering isn't about following strict rules. It's about making your audience's job easier.
+
+When people can quickly understand your data, they trust it more. And when they trust your data, they act on it.
+
+Next time you're putting together a chart or report, spend an extra few minutes thinking about order. Your audience will thank you. And you'll look like the data storytelling genius you're becoming.
+
+What's one chart you're working on this week? Let's talk about the best way to order it.
+
+---
+
+[chunk_id: your-chart-title-is-the-first-insight#1] Your Chart Title Is the First Insight > Giving The Answer Before They Ask
+Every chart needs attention, but most people scan reports quickly. The title has a big job because it tells the reader where to look and what to notice.
+
+Many charts waste this important space. They use plain labels like “Monthly Store Visits” or “Customer Ages.”
+
+Those words are true, but they only describe the chart. They do not explain what the numbers mean.
+
+A better way is to write titles that say the main finding.
+
+Once you know the difference, the fix becomes simple: write the title like a headline.
+
+Think about how you read a newspaper. The headline gives you the biggest news right at the top. The article underneath gives you the proof and extra details.
+
+Your charts should work the same way. You want to share the answer before people study the data.
+
+If you found a big drop in sales during the summer, state that clearly. A title like “Summer Sales Fell By Half Due To Supply Delays” is helpful because the audience knows exactly why they are looking at the page.
+
+The bars and lines below support the point you made in the title.
+
+---
+
+[chunk_id: your-dashboard-has-a-reading-order#3] Your Dashboard Has A Reading Order > The Best Way To Help Your Audience
+You might think you are just someone who works with data, but you are actually a designer. The way you place your charts changes how easily people understand your hard work.
+
+Your dashboard already has a reading order, even if you did not plan it. What matters is if that order helps your audience or slows them down.
+
+Start at the top left. Put your most important insight there. Build the rest of the story around it. And the next time someone says your dashboard is confusing, you’ll know exactly where to look first.",fail,"""Put the most important insight at the top left, and build the rest of the chart or dashboard around it"" stretches dashboard reading-order advice to arranging a chart.",fail,"The ordering and design advice answers the question. However, “Put the most important insight at the top left” of a chart extends advice the excerpt gives specifically for dashboards."
+in_scope-043 run 1,How do I choose the right dashboard for the people who will use it?,"Choose the dashboard by the users’ role and what they need to do. Start with the one most important question it must answer, then show only the metrics that help answer it. Give different roles different views, rather than showing everyone everything.
+
+Keep the main view simple enough to understand in five seconds. Hide extra detail behind drill-downs. If users need to explore data themselves, a dashboard fits. If they need one clear message, slides may work better.
+
+Finally, watch real users. Their behavior will show whether the dashboard is useful, including which filters they actually use.","[chunk_id: the-4-dashboard-types-every-analyst#0] The 4 Dashboard Types Every Analyst Should Know > The 4 Dashboard Types Every Analyst Should Know
+Most dashboards may look alike, but they are not all made for the same job.
+
+If you have ever built one or used one for a while, you know something feels off when the wrong data ends up in the wrong place. The data is there, but it is not helping anyone do anything.
+
+That is because dashboards do different jobs. Once you know the type, it gets easier to choose the right data, layout, and audience.
+
+There are three types that come up in almost every conversation about dashboards. A fourth gets mentioned too, depending on who you ask.
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#6] Eight Questions Every Dashboard Must Answer > Question 7: Who Cares?
+This might sound harsh, but it's crucial. Not every piece of data matters to every person. A good dashboard helps people figure out what they should pay attention to.
+
+Your CEO doesn't need to see individual customer complaint details.
+
+Your customer service manager doesn't need to see quarterly investor metrics.
+
+But somehow, we keep building dashboards that show everything to everyone.
+
+Design different views for different roles. Use alert systems to highlight what needs attention. Make it easy for people to find their most important metrics quickly.
+
+---
+
+[chunk_id: the-best-dashboard-youll-ever-use#4] The Best Dashboard You’ll Ever Use Has Only 4 Metrics > How to Apply This to Your Dashboards
+So how do you make your data dashboards more like car dashboards? Here are some practical steps:
+
+Start with the core question. What's the one most important thing this dashboard needs to answer? That's your speedometer. Everything else is secondary.
+
+Use the 5-second rule. Someone should be able to look at your dashboard and understand the current situation in five seconds or less. If they can't, you've got too much going on.
+
+Group related information. Just like car dashboards group engine-related warnings together, group your related metrics. Don't scatter similar information all over the place.
+
+Make status clear. Use colors, icons, and visual cues to show whether things are good, bad, or need attention.
+
+Hide the details. Not everything needs to be visible all the time. Let people drill down into details when they need them, but keep the main view clean.
+
+The hardest part of building better dashboards isn’t technical. It’s mental.
+
+It’s the ability to not show everything. To trust that clarity beats completeness. To design with purpose, not panic.
+
+Remember, the goal isn't to show off how much data you can collect.
+
+The goal is to help people make better decisions, faster.
+
+---
+
+[chunk_id: stop-using-dashboards-for-presentations#2] Stop Using Dashboards For Presentations > Picking The Right Tool For The Job
+You do not have to stop building dashboards. They are still the best way to track daily performance and let teams explore data on their own.
+
+Think of a dashboard like a detailed map. It shows every road and city. It is great when someone wants to explore and find their own way.
+
+A slide deck is like a guided tour. You are the tour guide. You choose the route and point out only the most important sights.
+
+Both tools are valuable. The real question is which one fits the job.
+
+If people need to explore, use a dashboard. If they need to follow one clear message, slides often work better.
+
+---
+
+[chunk_id: the-nasa-dashboard-effect#5] The NASA Dashboard Effect > Quick Pro Tips
+- Watch real users – Sit behind someone using your dashboard. You'll learn more in 10 minutes than in 10 meetings.
+
+- Track filter usage – If nobody clicks a filter after 3 months, delete it.
+
+- Name things clearly – Call it ""Date Range,"" not ""Temporal Range Selector.""
+
+Your job isn't to show off how many ways you can slice data. It's to help people get answers quickly so they can make better decisions.
+
+Remember: The best dashboard is the one people actually use. And people use simple things that work, not complex things that impress.",pass,"Role-based views, core question, 5-second rule, drill-down, dashboard vs slides and watching users all supported.",pass,Both checks pass: the answer addresses choosing for users and is supported by the excerpts.
+in_scope-038 run 1,What skills should I build to stay valuable as AI handles more analyst tasks?,"Isaac argues that you should build skills around judgment, business knowledge, storytelling and trust, not just technical execution. Learn AI tools, but also understand how your company makes money, how its data is created, and what context sits behind the numbers. Practice explaining complex ideas to non-analysts, answering hard questions and helping people act. You should also learn to check data, explain what went wrong, and say what still needs caution. The valuable role is turning data into insight and earning confidence in the recommendations.","[chunk_id: ai-can-write-your-sql-but-it-cannot#4] AI Can Write Your SQL, But It Cannot Do Your Job > Build Skills AI Cannot Copy
+There is a concept in technology called the “last mile problem.” It means the final step is often the hardest.
+
+Technology can get a process 90% of the way there. But the final stretch, the part that needs real judgment and trust, still needs a person.
+
+You are the one who stands behind the final choice. You look leaders in the eye and tell them the best step to take. No dashboard can do that.
+
+The analysts who only know how to run code are the ones at risk. If you only do the mechanical parts of the job, a machine can easily replace you.
+
+Now is the perfect time to grow. Learn the new tools. Get comfortable with AI helpers. But spend just as much time learning about your company. Find out how the business makes money. Practice telling a clear story with your data. Talk to people who are not analysts.
+
+When you mix technical skills with business understanding, you become much harder to replace. The best parts of your job were never just about writing code in the first place.
+
+---
+
+[chunk_id: ai-can-write-your-sql-but-it-cannot#0] AI Can Write Your SQL, But It Cannot Do Your Job > AI Can Write Your SQL, But It Cannot Do Your Job
+A lot of data analysts are scared right now. And honestly, that makes sense.
+
+Every week, a new headline says AI can do everything. It can write code, build dashboards, and clean data. The list keeps growing.
+
+When a tool can do all of that, it can feel like there is nothing left for you to do.
+
+Yes, AI can write code. It can run queries, create charts, and summarize numbers faster than any human.
+
+But two things are still hard for AI. It cannot truly understand your business. And it cannot walk into a room and convince people to take action.
+
+Those two things are called domain knowledge and storytelling. Right now, they are the most valuable things you can bring to the table as a data analyst.
+
+---
+
+[chunk_id: the-reason-companies-still-need-analysts#3] The Reason Companies Still Need Analysts > Why Companies Actually Pay You
+If every company had perfect data, many analyst jobs would be much smaller.
+
+There would be less need to clean, check, explain, and connect the dots. More work could be automated. People would just open a dashboard and get the answer.
+
+But most companies do not work that way.
+
+Most companies have data spread across many tools. They have reports that do not match. They have teams using different definitions. They have leaders asking questions the current systems were not built to answer.
+
+That is why analysts matter.
+
+Your value is not just that you can make a chart. Your value is that you can help people trust what the chart is saying.
+
+Your value is not just that you can clean a file. Your value is that you can explain what was wrong, what you fixed, and what still needs caution.
+
+That is the part no dashboard tool can do for you. See it as the place where your value starts.
+
+---
+
+[chunk_id: ai-can-write-your-sql-but-it-cannot#3] AI Can Write Your SQL, But It Cannot Do Your Job > The Work That Happens Before You Open Any Tool
+Before you touch any tool, you are already asking questions. Who needs this? Why does it matter? What could go wrong with the data? These are judgment calls. A language model cannot make them for you.
+
+Getting People to Act Is Still a Human Job.
+
+Even if an AI knew everything about your business, it still has a problem. Getting people to act on data is a human task, not a math problem.
+
+When you share numbers with a team, you are making a point. You look at their faces. You see if they are confused or upset. You change your words to help them understand. You answer hard questions right away.
+
+A computer cannot do any of that. It cannot sit across from a skeptical manager and earn their confidence.
+
+Data storytelling means making a complex idea clear to a non-analyst. People do not make choices just on logic. They need to feel why something matters. They need to know what will happen if they ignore the data. This takes empathy and good communication.
+
+---
+
+[chunk_id: ai-can-write-your-sql-but-it-cannot#2] AI Can Write Your SQL, But It Cannot Do Your Job > What AI Cannot Know About Your Company
+AI only knows the information you give it. It does not know your company history. It does not know that sales dropped because your biggest client left. It does not know that a giant snowstorm closed your stores last winter.
+
+This is where domain knowledge comes in.
+
+Domain knowledge is the stuff you pick up from being inside the business. It lives in conversations, meetings, and the small details you notice over time. None of it shows up in a database.
+
+“The goal is to turn data into information, and information into insight.” - Carly Fiorina, Former CEO of HP
+
+That gap between information and insight is exactly where domain knowledge lives. It is not something you type into a prompt. It comes from being inside the business, paying attention, and building up knowledge over time.",fail,"""how its data is created"" is not in the excerpts, which mention how the business makes money and domain knowledge.",fail,"The answer addresses the requested skills, but advises learning 'how its data is created,' which is not stated or clearly implied by the excerpts."
+in_scope-017 run 4,How can I make my analysis meaningful and recommend what people should do next?,"Make the analysis serve a clear decision. Start with a specific problem or goal, explain the data and its limits, then show only the analysis steps that changed your direction. Keep findings tied to what the numbers support.
+
+To make it meaningful, test each result with “So what?” If it does not connect to a business goal or change what the business should do, leave it out. Tailor the detail to your audience: executives need impact and actions, while analysts may need more method and detail.
+
+End with a clear recommendation. Do not only describe a problem. Say what action to take, such as changing pricing, launching a campaign, focusing on a customer group or fixing a process. For dashboards, connect different scenarios to recommended actions, tools or workflows so the path from insight to action is short.","[chunk_id: stop-building-standard-portfolio#2] Stop Building Standard Portfolio Projects > The Five Parts Every Project Needs
+A business case follows a simple path. A great portfolio piece should do the same.
+
+The Problem
+
+Start with a specific goal. Do not just say you analyzed sales data. State that a retail brand needs to know which products are selling poorly so they can order smarter next month.
+
+The Data
+
+Be honest about your data. Explain where the data came from and what it is missing. This shows that you are careful, and it helps the reader trust your work.
+
+The Analysis
+
+Walk through your steps. You do not need to show every single thing you tried. Just share the parts that changed your direction and moved the project forward. Cut the noise so the reader stays focused.
+
+The Findings
+
+Keep your results tied to what the numbers actually show. Do not stretch your findings or make claims the data cannot support.
+
+The Recommendation
+
+This is the most important part. Tell the reader what action they should take based on your work. Teams need analysts who can help them decide what to do next.
+
+---
+
+[chunk_id: the-difference-between-data-reporting#6] The Difference Between Data Reporting and Data Storytelling > 5. Recommend what to do next
+This is the final piece. And it’s what separates great analysts from average ones.
+
+Don’t just point out problems. Suggest solutions. Give clear, actionable recommendations.
+
+Should the team launch a new campaign? Change the pricing strategy? Focus on a different customer group? Fix a broken process?
+
+Tell them what to do. That’s what they’re waiting for.
+
+Next time you’re working on an analysis, ask yourself these questions:
+
+- What does this data actually mean?
+
+- Why should anyone care about this?
+
+- What action should we take because of this?
+
+If you can answer those questions clearly, you’re not just reporting anymore.
+
+You’re storytelling.
+
+And that’s when people start listening.
+
+That’s the power of data storytelling. And it’s the skill that will set you apart in your career.
+
+---
+
+[chunk_id: nobody-reads-your-full-report-heres#4] Nobody Reads Your Full Report. Here's Why That's Okay > 2. Know Your Audience
+Are you presenting to executives who want the big picture? Or analysts who need the details? Different audiences need different levels of information.
+
+For executives: Focus on the business impact and recommended actions
+
+For analysts: Include more methodology and detailed findings
+
+For operations teams: Emphasize actionable insights they can implement
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#7] Eight Questions Every Dashboard Must Answer > Question 8: What Next?
+This is the big one. The question that separates useful dashboards from pretty wall decorations.
+
+After someone looks at your dashboard, what should they do? If the answer is ""nothing"" or ""I don't know,"" then you've built a reporting tool, not a decision-making tool.
+
+Great dashboards point toward action. They don't just show problems; they suggest solutions. They don't just display metrics; they highlight opportunities.
+
+Include recommended actions for different scenarios. Add links to relevant tools or processes. Design alerts that connect to workflows. Make the path from insight to action as short as possible.
+
+---
+
+[chunk_id: nobody-reads-your-full-report-heres#0] Nobody Reads Your Full Report. Here's Why That's Okay > Nobody Reads Your Full Report. Here's Why That's Okay
+Sometimes the best thing you can do for your report is to take stuff out of it.
+
+I know, I know.
+
+You spent hours on that analysis.
+
+You found so many interesting patterns.
+
+Your pivot tables are works of art.
+
+But cramming everything into one report is like trying to tell someone your entire life story when they just asked what you did yesterday.
+
+So how do you figure out what should stay and what should go?
+
+Here's the secret weapon that'll save you every time.
+
+Before you include anything in your report, ask yourself: "" So what? ""
+
+That beautiful chart showing sales by day of the week? So what? Does it change what the business should do?
+
+The correlation you found between website visits and rainfall? So what? Can the company actually use this information?
+
+If you can't answer ""so what?"" in a way that connects to business goals, maybe it doesn't belong in your report.
+
+Now that you know the test to use, let's talk about what usually doesn't pass it.
+
+---
+
+[chunk_id: nobody-reads-your-full-report-heres#3] Nobody Reads Your Full Report. Here's Why That's Okay > 5. Obvious Findings
+Don't waste space telling people things they already know.
+
+""Holiday sales peaked in December, but this year's peak was 30% higher than last year"" is much more valuable than just ""Holiday sales peaked in December.""
+
+1. Start With the End Goal.
+
+What decision is this report supposed to help make? What problem is it solving? Everything in your report should connect back to this goal.",pass,"Problem-data-analysis-findings-recommendation path, So what test, audience tailoring and dashboard actions all supported.",pass,"The answer addresses both making analysis meaningful and recommending next steps, and its advice is supported by the excerpts."
+in_scope-024 run 2,How can I tell whether a sudden drop is normal or something I need to fix?,"Start by checking the historical data. Look at previous years and ask whether the drop happens at the same time, is a similar size, and usually recovers in the same way. If it repeats, it is probably seasonal.
+
+Then check outside causes, such as holidays, weather, industry cycles or major events. Compare your results with industry benchmarks, competitors and the wider market. If everyone drops together, it is likely normal. If only your results fall while others grow, that is a red flag.
+
+Also ask experienced colleagues about the usual rhythm. Isaac recommends using baselines, year-over-year comparisons and chart notes so normal seasonal changes are clear.","[chunk_id: the-line-doesnt-always-go-up#2] The Line Doesn't Always Go Up > Is It a Failure or a Season?
+Here is a practical way to figure out what type of dip you are looking at.
+
+1. Look at Your Historical Data.
+
+Start with the past. Pull data from previous years and see if the dip appears again.
+
+Ask:
+
+- Does it happen around the same time each year?
+
+- Is the size of the dip similar?
+
+- How long did it take to bounce back before?
+
+If the pattern repeats, you are looking at a season, not a failure.
+
+---
+
+[chunk_id: the-line-doesnt-always-go-up#3] The Line Doesn't Always Go Up > 2. Check External Factors
+Some dips line up with events outside the dashboard.
+
+Think about:
+
+- Holidays and school schedules
+
+- Weather changes
+
+- Industry cycles
+
+- Cultural moments and big events
+
+If ad clicks crash during the Super Bowl, that is not a failing ad. People are simply watching TV.
+
+3. Compare Against Industry Benchmarks.
+
+Do not look at your data alone.
+
+Check:
+
+- Industry benchmarks
+
+- Competitor trends
+
+- Market movement
+
+If everyone dips at the same time, it is likely seasonal. If only you dip while others grow, that is a red flag.
+
+---
+
+[chunk_id: the-line-doesnt-always-go-up#5] The Line Doesn't Always Go Up > Let’s Zoom Out for a Second
+Data is not just numbers. It reflects human behavior. And human behavior moves in cycles.
+
+People travel. People rest. People follow calendars, weather, and moods.
+
+Not every dip needs a fix. Not every slowdown is a crisis. Many dips are simply seasons.
+
+And when you learn to read those seasons, the data becomes easier to explain and easier to trust.
+
+Your job is not to make every month go up. Your job is to know what is normal, spot what is different, and help people understand why.
+
+---
+
+[chunk_id: the-line-doesnt-always-go-up#4] The Line Doesn't Always Go Up > 4. Talk to People Who Know the History
+People who have been in the company for years know the rhythm.
+
+You will hear things like:
+
+- “Q3 is always slow.”
+
+- “Engagement drops after big launches.”
+
+- “Sales fall during school exams.”
+
+Mix human memory with your data. It gives you strong context. These insights save you hours of digging through data.
+
+How to Use This in Your Actual Work.
+
+Once you spot a seasonal pattern, use it to guide your work.
+
+Build simple baselines. Look at two to three years of data and note when dips and peaks usually happen. Add key factors like holidays or weather. Even one simple note like ‘Sales fall in Q3 and rise again in Q4’ helps a lot.
+
+Add context to your dashboards. Never show one number alone. Include last month and the same month last year. A month to month dip looks scary until you see year to year growth.
+
+Annotate your charts. Add small notes like “Holiday spike” or “School break dip.” This helps everyone understand the pattern without guessing.
+
+Lead with context. When you present results, start by saying what is normal for that season. Then explain what is new or different. This keeps the focus on insight, not panic.",pass,"Historical check, external factors, benchmarks, colleagues, baselines and notes all from the excerpts.",pass,"The answer addresses how to distinguish seasonal dips from red flags, and its guidance is supported by the excerpts."
+in_scope-042 run 1,How can I explain my data project so recruiters understand why it matters?,"Explain the project like a short business case, not a tool demo. Start with the specific problem you were trying to solve. Say where the data came from and what it is missing, then briefly describe the analysis steps that changed your direction. Share only findings the data supports. End with one clear takeaway and a recommendation, including what action someone should take next. Tie the result to a business goal, such as revenue, customer retention or saving money. This gives recruiters the context they need and shows that you can turn analysis into useful decisions.","[chunk_id: the-reason-your-projects-are-getting#2] The Reason Your Projects Are Getting Ignored > What Hiring Managers Want To See
+When a recruiter looks at your post, they are not just noticing how it looks. They are trying to figure out if you can think through a problem and explain your findings.
+
+A plain screenshot only shows that you know how to use a tool. It does not show that you solved a real problem or found anything important.
+
+People looking at your post cannot fill in the missing context on their own. They look at hundreds of profiles every day.
+
+If your post makes them guess what it means, they will simply scroll past it and move on. You have to become the translator for your own work.
+
+---
+
+[chunk_id: the-reason-your-projects-are-getting#3] The Reason Your Projects Are Getting Ignored > Three Steps To Explain Your Work
+You do not need to write a lot to make your point clear. The goal is to make the post easy to follow. You want the reader to understand why it matters right away. A few short lines can do that.
+
+First, start with the main problem. Tell the reader what you were trying to figure out.
+
+Next, share what you found in the data.
+
+Finally, give them one clear takeaway. Tell them why the result matters.
+
+These three simple parts take less than a hundred words to write. They help your project feel clear and easier to understand.
+
+---
+
+[chunk_id: the-reason-your-projects-are-getting#4] The Reason Your Projects Are Getting Ignored > Do The Hard Work For The Reader
+The entire point of sharing a project is to prove you can bring real value to a team. Every business needs clear answers to real problems.
+
+By adding context to your images, you show that you can think clearly and communicate useful insights.
+
+You take the heavy lifting off the reader and act as a helpful guide. When you explain your own work clearly, you show companies that you are ready to do the same thing for them.
+
+A good visual is a strong starting point. A clear explanation helps people understand and trust your work.
+
+When you combine the two, your projects are more likely to get noticed.
+
+---
+
+[chunk_id: the-difference-between-data-reporting#5] The Difference Between Data Reporting and Data Storytelling > 3. Explain what it means
+This is the part most people skip. And it’s the most important part.
+
+Don’t just show that sales dropped 15%. Explain WHY it dropped. What caused it? What patterns do you see? What’s the bigger picture?
+
+This is where you add context. This is where you connect the dots.
+
+4. Connect it to business goals.
+
+Your data should always tie back to something the company cares about.
+
+Is it about increasing revenue? Keeping customers happy? Saving money? Growing market share?
+
+Make that connection clear. Show how your findings impact the things that matter most.
+
+---
+
+[chunk_id: stop-building-standard-portfolio#2] Stop Building Standard Portfolio Projects > The Five Parts Every Project Needs
+A business case follows a simple path. A great portfolio piece should do the same.
+
+The Problem
+
+Start with a specific goal. Do not just say you analyzed sales data. State that a retail brand needs to know which products are selling poorly so they can order smarter next month.
+
+The Data
+
+Be honest about your data. Explain where the data came from and what it is missing. This shows that you are careful, and it helps the reader trust your work.
+
+The Analysis
+
+Walk through your steps. You do not need to show every single thing you tried. Just share the parts that changed your direction and moved the project forward. Cut the noise so the reader stays focused.
+
+The Findings
+
+Keep your results tied to what the numbers actually show. Do not stretch your findings or make claims the data cannot support.
+
+The Recommendation
+
+This is the most important part. Tell the reader what action they should take based on your work. Teams need analysts who can help them decide what to do next.",pass,"Problem, data, analysis, findings, takeaway, recommendation and business goals all come from the excerpts.",pass,"The answer addresses how to explain a project’s significance, and its advice is supported by the excerpts."
+in_scope-036 run 1,How do I explain both the benefits and drawbacks of a data-driven recommendation?,"Explain the recommendation as a balanced story: start with the benefit, then name the drawback or risk, and end with what you want people to do. Isaac recommends asking, “What’s the good news?”, “What’s the bad news?”, and “What do I want people to do about it?”
+
+Also explain the choices behind the analysis when they could change the result. For example, say if you dropped missing rows, removed outliers, grouped categories, or filtered the data. These decisions affect what is included and excluded, and can change the recommendation.
+
+Finally, tailor the explanation to the audience. The same metric can lead different people to different conclusions, so connect the benefit and drawback to the decision they need to make.","[chunk_id: the-decisions-behind-the-dashboard#0] The Decisions Behind The Dashboard > The Decisions Behind The Dashboard
+Every choice you make while cleaning data changes what the reader sees at the end.
+
+It changes what they believe. It can even change the recommendation you give.
+
+When you drop rows with missing values, you are removing real people or real transactions from your analysis. They did not stop existing. They are just no longer being counted.
+
+When you group small categories into a bucket called “Other,” you are deciding those groups are not worth showing separately.
+
+When you cap a number that looks too high, you are changing the shape of your data before anyone else sees it.
+
+Each choice changes what comes next. That is why data cleaning should not be treated like a small step you hide in the background. It is part of the story.
+
+---
+
+[chunk_id: the-decisions-behind-the-dashboard#4] The Decisions Behind The Dashboard > Which Choices Actually Need Explaining
+Not every cleaning step needs an explanation. But some choices should almost always be explained because they can change the final result.
+
+If you drop rows with missing values in an important column, mention it.
+
+If you remove outliers, mention it.
+
+If you group categories together, mention it.
+
+If you filter the data to one time period, one region, or one group of customers, mention it.
+
+These choices affect what the analysis includes and excludes. They also affect how the reader should understand the final chart.
+
+Once you know which choices matter, the next step is explaining them in a simple way.
+
+---
+
+[chunk_id: the-gift-and-risk-of-data-storytelling#0] The Gift and Risk of Data Storytelling > The Gift and Risk of Data Storytelling
+You look at a dashboard and see this:
+
+Conversion rate this month: 5.0 percent Conversion rate last month: 4.5 percent
+
+Nice. It went up.
+
+But what does that really mean?
+
+- A marketer might say, “The new campaign is working.”
+
+- A product manager might say, “Users are finding the value faster.”
+
+- A finance lead might say, “Revenue is growing.”
+
+- A support lead might say, “Tickets will go up again.”
+
+All of them are reacting to the same metric.
+
+This is why one metric can feel powerful and confusing at the same time. The number is fixed. The story around it is not.
+
+The good news is that you can use this on purpose. You can shape the story to fit the audience and the decision.
+
+To show this, let us walk through three stories for the same conversion rate.
+
+---
+
+[chunk_id: ive-got-some-good-news-and-bad-news#7] I’ve Got Some Good News and Bad News. > The Only Thing You Need To Remember
+The “good news, bad news” structure works because people already know it. You’re not teaching them a new way to think. You’re using a pattern that’s already living in their head.
+
+That’s smart communication. That’s what good data storytelling looks like.
+
+So next time you’re staring at a dashboard full of mixed results, ask yourself three questions:
+
+- What’s the good news?
+
+- What’s the bad news?
+
+- What do I want people to do about it?
+
+Then tell them. In whatever order makes sense for your goal.
+
+Just like my subscriber count situation. Sure, those 40 people might be family and friends. But at least they understood exactly where things stand.
+
+And now, so do you.",fail,"""start with the benefit, then name the drawback or risk"" prescribes a fixed order, while the excerpt says to use ""whatever order makes sense for your goal"".",pass,Both checks pass: the answer addresses benefits and drawbacks and is supported by the excerpts.
+in_scope-029 run 1,Where can I find practical advice for getting better at working with data?,"Isaac’s newsletter, *Explain the Data*, offers practical advice on data cleaning, charts, dashboards, SQL, and presenting analysis. Start with *The Dirty Secret Every Senior Analyst Knows (But Won't Tell You)* for data cleaning and investigation. For charts, read *The Simple Trick That Makes Your Data 10x Clearer* and *The Chart Building Process That Changed How I Present Data*. For dashboards, see *The NASA Dashboard Effect*. For SQL and explaining technical work, see *Nobody Cares How Hard Your SQL Query Was*.","[chunk_id: the-dirty-secret-every-senior-analyst#4] The Dirty Secret Every Senior Analyst Knows (But Won't Tell You) > Your New Data Cleaning Philosophy
+Stop trying to make your data perfect. Start trying to make your data honest.
+
+Clean with purpose, not perfection. Every cleaning decision should serve your analysis goal. Don't clean just to clean.
+
+Question the clean data as much as the messy data. If something looks too perfect, it probably is. Real-world data has rough edges.
+
+Talk to the humans. The person who enters the data knows more about what's wrong with it than your computer does.
+
+Preserve the context. Don't just fix values. Document what they were before you fixed them and why they were that way.
+
+The best data analysts aren't the ones with the cleanest datasets. They're the ones who understand why their data is messy and use that messiness to find insights others miss.
+
+Because at the end of the day, perfect data tells you what you want to hear. Messy data tells you what you need to know.
+
+And that's the difference between being a data janitor and being a data detective.
+
+Which one do you want to be?
+
+---
+
+[chunk_id: the-simple-trick-that-makes-your#4] The Simple Trick That Makes Your Data 10x Clearer > Quick Decision Framework
+If you are stuck on ordering, use these questions
+
+- Am I showing performance or comparison? ⇒ Use ranking (highest to lowest)
+
+- Am I showing change or trends? ⇒ Use time order
+
+- Does this follow a natural sequence? ⇒ Use logical order
+
+Good data ordering isn't about following strict rules. It's about making your audience's job easier.
+
+When people can quickly understand your data, they trust it more. And when they trust your data, they act on it.
+
+Next time you're putting together a chart or report, spend an extra few minutes thinking about order. Your audience will thank you. And you'll look like the data storytelling genius you're becoming.
+
+What's one chart you're working on this week? Let's talk about the best way to order it.
+
+---
+
+[chunk_id: the-dirty-secret-every-senior-analyst#3] The Dirty Secret Every Senior Analyst Knows (But Won't Tell You) > People Work Around Broken Systems
+When I see text like ""see notes field"" in a number column, I don't just convert it to null. I go find the notes field. Someone was trying to tell me something important that didn't fit in your neat little database schema.
+
+That creative use of the ""other"" category is someone's telling you your options are incomplete.
+
+The Questions Nobody Asks.
+
+Instead of ""How do I clean this data?"" ask:
+
+- ""What was the person entering this data thinking?""
+
+- ""What business rule created this weird pattern?""
+
+- ""Who benefits if I clean this vs. keep it messy?""
+
+- ""What story does the mess tell that the clean data hides?""
+
+- ""Am I cleaning this because it's wrong, or because it's inconvenient?""
+
+The most dangerous question in data analysis is ""How do I make this cleaner?"" The most valuable question is ""Why is this messy?""
+
+---
+
+[chunk_id: the-nasa-dashboard-effect#5] The NASA Dashboard Effect > Quick Pro Tips
+- Watch real users – Sit behind someone using your dashboard. You'll learn more in 10 minutes than in 10 meetings.
+
+- Track filter usage – If nobody clicks a filter after 3 months, delete it.
+
+- Name things clearly – Call it ""Date Range,"" not ""Temporal Range Selector.""
+
+Your job isn't to show off how many ways you can slice data. It's to help people get answers quickly so they can make better decisions.
+
+Remember: The best dashboard is the one people actually use. And people use simple things that work, not complex things that impress.
+
+---
+
+[chunk_id: nobody-cares-how-hard-your-sql-query#4] Nobody Cares How Hard Your SQL Query Was > Save The Long Math For Later
+None of this means the technical work does not matter. It does. Clean data is what makes the answer true. A well-built query is what makes the finding reliable.
+
+It just does not belong at the front.
+
+Put the data sources, cleaning steps, and method in an appendix or backup slide. That way, another analyst can review your logic or repeat the work if needed.
+
+If a colleague wants to know how you built the model, they will ask. If a manager wants to understand your assumptions, they will raise their hand. That is the right moment to go deep. Not during the opening minutes when you are still trying to get everyone on the same page.
+
+Technical details answer a question nobody has asked yet. Save them for the moment someone actually asks.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#2] The Chart Building Process That Changed How I Present Data > Step 2: Check Your Initial Format (This Changes Everything)
+Now here's something most people never think about: the format of your data matters way more than you think.
+
+Look at your spreadsheet. Really look at it. Is it set up in a way that makes building your chart easy, or are you about to fight with your tool for the next hour?
+
+Good data format looks like this:
+
+- One row per observation
+
+- Clear column headers
+
+- No merged cells or fancy formatting
+
+- Missing data handled properly
+
+- Consistent data types in each column
+
+Bad data format looks like this:
+
+- Summary tables with totals mixed in
+
+- Multiple variables crammed into one column
+
+- Inconsistent naming (Jan, January, 01)
+
+- Colors and formatting doing the work that data should do
+
+If your data isn't chart-ready, fix it now. Seriously. Don't try to work around bad formatting. It always comes back to bite you later.
+
+Pro tip: If you find yourself doing weird tricks to make your chart work, your data probably isn't formatted right.",pass,Points to post titles present in the excerpts with accurate topic labels.,fail,"The answer recommends relevant posts, but the newsletter name “Explain the Data” is not stated in the excerpts."
+in_scope-025 run 2,When should I use a table instead of a chart for my data?,"Use a table when people need exact numbers, details, or the ability to check and reuse the data. This is especially useful for analysts, finance teams, and technical staff. Use a chart when people need to spot patterns, compare values, or see trends quickly. If people need both, put the chart first for the main story and the table below for detail. Isaac’s point is that the choice depends on the audience, the story, and how the data will be used.","[chunk_id: stop-making-charts-for-everything#4] Stop Making Charts for Everything > It All Comes Down to This
+The “table vs chart” debate is not really a fight. It is about picking the right tool for the job.
+
+Ask yourself:
+
+- What does my audience need right now? A quick picture or exact numbers?
+
+- What story am I telling? A trend over time or a clear comparison?
+
+- How will this data be used? Fast decisions or deeper analysis?
+
+If your audience needs to spot patterns fast, use a chart. If they need exact values and details, use a table.
+
+If they need both, give them both. Put a chart at the top for the story and a table under it for the details.
+
+There is no rule that says you must choose only one.
+
+---
+
+[chunk_id: stop-making-charts-for-everything#1] Stop Making Charts for Everything > When a Table Beats a Chart
+Let us look at the moments where tables shine.
+
+1. When you need exact numbers.
+
+Say you are looking at product spending. A bar chart tells you that Wines has the highest spend. Good.
+
+But then someone asks, “How much did we spend on Meat?”
+
+With a table, the answer is easy. They look once and see 165.3 dollars. Done.
+
+With a chart, even with labels, they may squint or guess. That slows them down.
+
+Look at the Product Mix Analysis example. The table is clean and clear. In one glance you see the product name, the average spend, and the percent share.
+
+---
+
+[chunk_id: stop-making-charts-for-everything#0] Stop Making Charts for Everything > Stop Making Charts for Everything
+Not every piece of data needs to be visualized
+
+I know, I know. We are always told that visuals are king.
+
+“Make it visual.” “People do not read tables.” “Charts are more engaging.” And yes, most of the time, that is true.
+
+But sometimes a table is exactly what you need.
+
+Let me explain.
+
+Everyone Loves a Good Chart (Maybe Too Much).
+
+If you have spent any time in data, or taken a data bootcamp course, you have heard this idea many times. Charts and graphs are the best way to share insights.
+
+Bar charts, line charts, pie charts (okay, maybe not pie charts), scatter plots. We are trained to reach for a chart first.
+
+Charts are great. They help people see trends at a glance. They make it easy to compare values and spot patterns without reading a lot of text. A good chart can tell a story in a few seconds.
+
+But here is the key point. Charts are not always the answer.
+
+---
+
+[chunk_id: the-problem-with-treemaps#5] The Problem With Treemaps > Simple Charts Are Not a Step Down
+A lot of dashboard problems start when people try to make a chart look more advanced than the message requires.
+
+But simple charts are not lazy. Simple charts often respect the reader more. They save time, reduce confusion, and make the main point easier to see.
+
+If you want to compare categories, use a sorted bar chart.
+
+If you want to show change over time, use a line chart.
+
+If you want exact values, use a clean table.
+
+If you want to show parts of a whole for a few groups, use a 100% stacked bar chart.
+
+If you want to show positive and negative values, use a bar chart with a clear zero line.
+
+These charts may not look as flashy as a treemap, but they help the reader understand the data faster, which is the whole point of sharing data in the first place.
+
+---
+
+[chunk_id: stop-making-charts-for-everything#3] Stop Making Charts for Everything > 3. When your audience wants to dig in
+Not every stakeholder wants only a big picture view. Some people like the raw numbers.
+
+Analysts, finance teams, and technical staff often prefer tables. They want to explore the data, cross check values, or copy the numbers into another tool.
+
+For them, a table is not boring. It is useful.
+
+But wait, charts are not bad.
+
+I am not against charts. Charts are very valuable. They are great for stories, for trends over time, and for helping non technical people engage with the data.
+
+Most tools now let you add labels to charts with one click. So you can keep the visual punch and still show exact values.
+
+For example, you could turn the Product Mix table into a horizontal bar chart with labels on each bar. You would see the size of each product and also the exact dollar amount.
+
+So charts are not bad at all. They are just not the only option.",pass,"Table for exact values and digging in, chart for patterns, both when needed: all in excerpts.",pass,Both checks pass: the answer addresses when to use a table and is supported by the excerpts.
+in_scope-033 run 4,How can I tell whether my data shows a real problem or just random noise?,"Isaac suggests checking whether the pattern survives basic scrutiny. If you keep slicing the data until you find one scary graph, you may be forcing a result. A tiny change that needs a long explanation may not be a real problem. Use quick charts to spot what looks weird, then check and fix data issues and visualize again. For ranges or forecasts, rely on past results and explain where the low and high values came from. These checks help separate evidence from noise.","[chunk_id: the-insight-nobody-wants-to-hear#3] The Insight Nobody Wants to Hear (But Everyone Needs) > Signs You’re Trying Too Hard
+How do you know if you are being a good analyst or just making things up? Here are a few red flags:
+
+- You are slicing the data too much. You filter by region, then by age, then by eye color, until you finally find a graph that looks scary.
+
+- You feel relieved, not interested. If your main emotion is “Thank goodness I found something to show in the meeting,” you are probably forcing it.
+
+- You are writing a novel to explain a chart. Real insights are usually obvious. If you need ten minutes to explain why a 0.5% change is a disaster, it probably isn’t a disaster.
+
+---
+
+[chunk_id: stop-making-impossible-promises-with#2] Stop Making Impossible Promises with Data > A Range Is Not a Random Guess
+Using a range does not mean picking two numbers that look safe. A useful range should come from evidence.
+
+You can build the range from past results, changes in the data, or mistakes the model made before.
+
+Suppose a company ran ten similar campaigns. The weakest campaign brought in 380 customers, while the strongest brought in 610. Most of the campaigns brought in between 450 and 550.
+
+An analyst could use that history to build a reasonable range for the next campaign.
+
+The low and high numbers are not random. They come from what happened before.
+
+You should be able to explain where both numbers came from.
+
+---
+
+[chunk_id: visualization-is-part-of-data-cleaning#5] Visualization is Part of Data Cleaning > My Simple Process Now
+Here’s what I do, and it works so much better:
+
+Step 1: Load my data and do the basic checks. Duplicates, obvious blanks, data types.
+
+Step 2: Make some quick visualizations. Histograms for numbers. Bar charts for categories. Line charts for time stuff.
+
+Step 3: Look at those charts and ask “what looks weird?”
+
+Step 4: Go fix the weird stuff.
+
+Step 5: Visualize again. See if it looks better.
+
+Step 6: Repeat until things look right.
+
+It’s like a conversation between you and your data. The visuals help your data “talk” to you.",fail,"Stretches data-cleaning visualization steps and forecast-range advice to telling real problems from noise (""These checks help separate evidence from noise""), which the excerpts don't say.",pass,Both checks pass: the answer addresses the question and its advice is grounded in the excerpts.
+in_scope-001 run 4,How can I make my data presentation more memorable?,"Isaac suggests making your presentation memorable by giving it a clear story, not showing everything at once. Lead people through the context, problem, data and recommendation, with one main idea on screen at a time.
+
+Build the story around a surprising finding, a clear visual, a human angle and one big takeaway. Remove clutter, highlight the key number, and add context such as benchmarks or targets. Then guide people through the chart by pointing out what changes and why it matters.
+
+Keep the design simple: use color with purpose, label only what matters, and make the chart easy to read.","[chunk_id: stop-using-dashboards-for-presentations#1] Stop Using Dashboards For Presentations > How Slides Do The Work For You
+Slides do something dashboards do not do well. They remove extra noise.
+
+When you use a slide deck, you control what the audience sees.
+
+You show one idea at a time. First, you give the context.
+
+Then you show the problem.
+
+Next, you bring in the data.
+
+Finally, you end with a clear recommendation.
+
+The audience follows your path, not their own.
+
+This matters a lot when you are talking to people who do not look at data every day. It is also important when your team needs to make a big choice.
+
+The same idea applies to data presentations.
+
+Steve Jobs was famous for his simple presentation style. He rarely put more than one number or image on the screen at a time. He knew that extra details take attention away from the speaker and weaken the core message.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#5] The Chart Building Process That Changed How I Present Data > Step 5: Format Like a Pro
+This is where good charts become great charts. The formatting is what makes people want to keep looking and actually understand what you're showing them.
+
+Clean up your axes. Round your numbers to sensible values. If you're showing millions of dollars, don't display 2,847,293. Show 2.8M instead. Your audience will thank you.
+
+Add context. A line that goes up is nice. A line that goes up 23% while the industry average went down 5% is a story. Add reference lines, benchmarks, or targets that help people understand if your numbers are good or bad.
+
+Use color with purpose. Don't make everything rainbow colored just because you can. Use color to highlight what's important. Make the good stuff green and the bad stuff red only if that makes sense. Sometimes gray is your best friend.
+
+---
+
+[chunk_id: the-man-who-made-statistics-fun#1] The Man Who Made Statistics Fun > The Secret To Making Data Feel Exciting
+Rosling understood this. He did not leave people alone with the data. He led them through it.
+
+He was a doctor, professor, and global health expert. But many people remember him for the way he made data easy to follow. He made charts feel alive.
+
+In 2006, he gave a famous TED Talk called The Best Stats You’ve Ever Seen . He showed countries moving across a chart over 200 years, using income, health, and population data.
+
+That could have been boring. It could have felt like a chart only data people would enjoy. But Rosling did what many presenters still miss. He guided people through the chart.
+
+He pointed. He moved. He got louder when the data changed. He slowed down when something important happened. By the end, people were clapping for a bubble chart.
+
+That says a lot about data storytelling. The goal is not to make people admire the chart. The goal is to help them understand what the chart means.
+
+---
+
+[chunk_id: why-some-data-stories-stick-and-others#0] Why Some Data Stories Stick and Others Don’t > Why Some Data Stories Stick and Others Don’t (part 1)
+Most data stories are kind of forgettable.
+
+They have nice charts.
+
+They show the right numbers.
+
+But five minutes later, no one remembers what it was about.
+
+That’s the tough part about data storytelling.
+
+It’s not that they’re wrong.
+
+Or boring.
+
+They just don’t stick.
+
+It’s not just about being right. It’s about being remembered.
+
+Here are 4 things great data stories almost always have:.
+
+1. A little surprise
+
+If everything in your story is expected, no one pays attention.
+
+We remember what surprises us.
+
+Even small things.
+
+A number that doesn’t fit.
+
+A result that flips a common belief.
+
+A pattern no one saw coming.
+
+Find that moment.
+
+Make it the hook.
+
+Let the data pull people in.
+
+2. Clean, clear visuals
+
+If someone has to squint or think too hard to read your chart... it’s over.
+
+You don’t need to show everything.
+
+You need to show the point.
+
+Use one main chart.
+
+Keep the text light.
+
+Highlight the key number.
+
+Make it obvious.
+
+When the visual is clear, the message comes through faster.
+
+3. A human angle
+
+Data hits harder when people see themselves in it.
+
+So go beyond the metric.
+
+Show what it means for real people.
+
+Fewer clicks on the website? Maybe that’s fewer signups.
+
+Fewer signups? Maybe that’s a missed opportunity for someone looking for help.
+
+Numbers are just the starting point.
+
+Add a little heart, and people care more.
+
+4. One big takeaway
+
+---
+
+[chunk_id: the-simple-trick-that-makes-your#4] The Simple Trick That Makes Your Data 10x Clearer > Quick Decision Framework
+If you are stuck on ordering, use these questions
+
+- Am I showing performance or comparison? ⇒ Use ranking (highest to lowest)
+
+- Am I showing change or trends? ⇒ Use time order
+
+- Does this follow a natural sequence? ⇒ Use logical order
+
+Good data ordering isn't about following strict rules. It's about making your audience's job easier.
+
+When people can quickly understand your data, they trust it more. And when they trust your data, they act on it.
+
+Next time you're putting together a chart or report, spend an extra few minutes thinking about order. Your audience will thank you. And you'll look like the data storytelling genius you're becoming.
+
+What's one chart you're working on this week? Let's talk about the best way to order it.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#4] The Chart Building Process That Changed How I Present Data > Step 4: Build Your Chart
+Okay, now you get to do the fun part. But even here, there's a right way and a wrong way.
+
+Start simple. Don't add every bell and whistle your tool offers. Build the most basic version of your chart first, then add complexity only if it helps tell your story better.
+
+Focus on the data, not the decorations. Your chart should highlight the important stuff and fade everything else into the background. That means:
+
+- Make your data stand out with color and size
+
+- Make your axes and gridlines light and subtle
+
+- Only label the things that matter
+
+- Remove any elements that don't add value
+
+Make it readable. Use fonts big enough to read easily. Pick colors that work for colorblind folks. Make sure there's enough contrast.",pass,"One idea at a time, surprise, clear visual, human angle, takeaway, guiding through the chart and formatting all supported.",pass,Both checks pass: the answer addresses memorability and its advice is supported by the excerpts.
+in_scope-027 run 2,How can I measure something customer-related that isn’t directly visible?,"Use a proxy metric, a measurable stand-in for the customer-related thing you cannot see directly. For customer happiness, Isaac suggests looking at repeat purchases, time on site, or support ticket volume. None measures happiness itself, but each gives clues.
+
+Do not rely on just one proxy. Track several and look for the same pattern. For example, combine Repeat Purchase Rate, NPS, Average Order Value, Support Ticket Volume, and Time Between Purchases. When they point in the same direction, you can be more confident. When they conflict, investigate instead of assuming.","[chunk_id: the-measurement-problem-every-analyst#0] The Measurement Problem Every Analyst Faces (And How to Fix It) > The Measurement Problem Every Analyst Faces (And How to Fix It)
+You want to know if your customers are happy.
+
+But here’s the problem: you can’t just knock on someone’s door and ask, “Hey, on a scale of 1 to 10, how happy are you right now?”
+
+Well, you could 😕, but good luck getting honest answers. People lie. People don’t know how they feel. And most importantly, you can’t do this for thousands of customers every single day.
+
+So what do you do?
+
+You use something called a Proxy Metric .
+
+And if you learn this trick, you can solve a big data problem: how to measure things that feel impossible to measure.
+
+---
+
+[chunk_id: the-measurement-problem-every-analyst#2] The Measurement Problem Every Analyst Faces (And How to Fix It) > Let Me Show You an Example
+Let’s say you run an online store.
+
+You want happy customers. But you can’t read their minds.
+
+So you pick a proxy: Repeat Purchase Rate .
+
+If people keep coming back to buy from you, that’s a good sign they’re happy. If they buy once and never return, that’s a red flag.
+
+Is this perfect? No. But it’s better than nothing.
+
+Another easy example.
+
+You sell furniture. You want to know if your furniture is good quality.
+
+You can’t test every single chair and table. That would take forever.
+
+So you pick a proxy: Return Rate .
+
+If people keep sending your stuff back, your quality probably sucks. If almost no one returns anything, you’re doing something right.
+
+Again, not perfect. But useful.
+
+---
+
+[chunk_id: the-measurement-problem-every-analyst#1] The Measurement Problem Every Analyst Faces (And How to Fix It) > Okay, But What Even Is a Proxy Metric?
+A proxy metric is a stand-in. It’s something you can measure that stands for something you can’t measure directly.
+
+Think of it like this:
+
+You want to know if someone is rich. But you can’t see their bank account.
+
+So instead, you look at their car. Their house. Their clothes. These things aren’t money, but they give you clues about money.
+
+That’s a proxy.
+
+In data, we do the same thing.
+
+You want to measure: Customer Happiness
+
+You can’t measure it directly because happiness lives in people’s heads.
+
+So you find a proxy: Maybe it’s how often people come back to buy again (Repeat Purchase Rate). Maybe it’s how long they stay on your website (Time on Site). Maybe it’s how few complaints you get (Support Ticket Volume).
+
+These aren’t happiness. But they leave clues about happiness.
+
+---
+
+[chunk_id: the-measurement-problem-every-analyst#4] The Measurement Problem Every Analyst Faces (And How to Fix It) > So How Do You Fix This?
+Great analysts find one proxy metric.
+
+Elite analysts use many proxy metrics together to get closer to the truth.
+
+Here’s what that means.
+
+Instead of using only one number, you track several proxies and look for patterns.
+
+Let’s go back to the “Customer Happiness” example.
+
+Triangulating Customer Happiness.
+
+You want to know if customers are happy. So you track:
+
+- Repeat Purchase Rate (Are they coming back?)
+
+- Net Promoter Score (NPS) (Would they recommend you to a friend?)
+
+- Average Order Value (Are they buying more over time?)
+
+- Support Ticket Volume (Are they complaining?)
+
+- Time Between Purchases (How often are they coming back?)
+
+Now you’re not just looking at one shadow. You’re looking at five different shadows from five different angles.
+
+If all five metrics point the same way, you can be pretty sure about what’s happening.
+
+If Repeat Purchase Rate is up, NPS is up, Average Order Value is up, Support Tickets are down, and Time Between Purchases is shrinking, then yeah, your customers are probably happy.
+
+But if Repeat Purchase Rate is up but NPS is down and Support Tickets are spiking, something weird is going on. Maybe people are buying because they have no other option, but they’re not actually happy about it.
+
+That’s triangulation.
+
+You’re using multiple proxies to get closer to the truth.",pass,"Proxy metric definition, happiness proxies and triangulation with the five metrics all from excerpts.",pass,Both checks pass: the answer addresses the question and is supported by the excerpts.
+in_scope-051 run 5,When should I avoid using boxes to compare categories in a dashboard?,"Avoid using boxes, such as treemap blocks, when you need people to compare categories closely or quickly. Boxes use area, so similar values can look different because of their shape. Small categories can also become tiny, lose their labels, and force people to hover for basic information. Isaac recommends a sorted bar chart for comparing categories instead.","[chunk_id: the-problem-with-treemaps#5] The Problem With Treemaps > Simple Charts Are Not a Step Down
+A lot of dashboard problems start when people try to make a chart look more advanced than the message requires.
+
+But simple charts are not lazy. Simple charts often respect the reader more. They save time, reduce confusion, and make the main point easier to see.
+
+If you want to compare categories, use a sorted bar chart.
+
+If you want to show change over time, use a line chart.
+
+If you want exact values, use a clean table.
+
+If you want to show parts of a whole for a few groups, use a 100% stacked bar chart.
+
+If you want to show positive and negative values, use a bar chart with a clear zero line.
+
+These charts may not look as flashy as a treemap, but they help the reader understand the data faster, which is the whole point of sharing data in the first place.
+
+---
+
+[chunk_id: the-problem-with-treemaps#2] The Problem With Treemaps > Small Categories Get Squeezed
+Treemaps also have a problem with small categories.
+
+When a few large values take up most of the space, the smaller values get squeezed into tiny boxes. Their labels may get cut off. Some labels may not show at all. The chart still looks full, but the details are no longer easy to read.
+
+This happens a lot in business dashboards. One or two large groups take over the space, while the rest become tiny blocks. At that point, those small blocks only make sense if you hover over them with a mouse.
+
+Tooltips are useful for this, but they should only support the chart, not carry the whole thing.
+
+If someone has to hover over many boxes just to understand the basic message, the chart is not doing enough on its own. A good chart should give the main story without extra digging.
+
+---
+
+[chunk_id: the-problem-with-treemaps#0] The Problem With Treemaps > The Problem With Treemaps
+Humans are good at comparing length when objects are lined up. That is why bar charts work so well.
+
+If one bar is longer than another, we can usually spot the difference fast.
+
+Treemaps do not work that way. They use area.
+
+That means the reader has to compare one box with another. This sounds easy, but it is not. One box may look bigger because it is wider. Another may look bigger because it is taller. Two boxes can have almost the same area but very different shapes.
+
+So the eye starts guessing.
+
+This is why treemaps can work when one category is huge and the rest are small. The big pattern is clear. But once the values are close, the chart becomes weak.
+
+If Category A is 18% and Category B is 16%, most people will not see that difference clearly in a treemap. They may need to hover, check labels, or look at the numbers. At that point, the chart is no longer helping enough.
+
+A chart should not make basic comparison feel like a puzzle.",pass,"Area comparison, close values, squeezed small boxes, hovering and sorted bar alternative all supported.",pass,The answer addresses when to avoid boxes and is supported by the excerpts.
+in_scope-041 run 4,How can I tell whether my dashboard metrics actually measure what they claim?,"In “Stop Redesigning Broken Dashboards,” Isaac says to test the metric definition before judging the dashboard design. Ask what exactly counts, what is excluded, and whether everyone agrees on the logic. For example, define whether “active users” includes one login, specific actions, bots, test accounts, or internal users. Also check whether rules have changed and whether the report mixes things that should stay separate. If these answers are unclear, the metric may not mean the same thing to everyone, or may describe a problem that does not really exist.","[chunk_id: stop-redesigning-broken-dashboards#1] Stop Redesigning Broken Dashboards > Bad Metrics Do Not Announce Themselves
+A broken metric does not always look broken. Most of them look completely normal on the surface.
+
+The problem is in the definition, and you only notice the gaps when you look closely.
+
+Take “active users.” It sounds simple. But what counts as active? Logging in once? Completing a specific action? Does the definition exclude bots, test accounts, or internal users?
+
+If nobody has answered those questions clearly, the number means something different to every person looking at it.
+
+Now take ‘churn rate.’ Most people think it means customers who canceled. But what about accounts that paused? Downgraded? Stopped paying but never fully closed?
+
+If paused accounts are being counted as lost, churn looks worse than it actually is. The product gets blamed for a problem that may not exist in the way the data suggests.
+
+These are not rare edge cases. They are the kinds of definition gaps that live inside common KPIs at real companies, often for years, with nobody raising a flag.
+
+---
+
+[chunk_id: stop-redesigning-broken-dashboards#4] Stop Redesigning Broken Dashboards > Design Last. Measure First.
+The whole point of tracking data is to help people make better decisions. That only happens if the numbers measure exactly what they claim to measure.
+
+Good design is meant to support good data, not replace it.
+
+Before you start your next dashboard redesign, take a step back. Check your metrics. Make sure the logic behind the number is clear and that everyone agrees on it. Make sure the number is actually measuring what it claims to measure.
+
+Once you trust the foundation, then you can start designing.
+
+---
+
+[chunk_id: stop-redesigning-broken-dashboards#3] Stop Redesigning Broken Dashboards > Stop And Look At The Numbers First
+A good analyst does not just build what they are asked for. They check the numbers before they ever touch the charts.
+
+This means pausing to ask hard questions. They check if the rules have changed since the dashboard was first made. They check if the report is mixing things that should never be mixed.
+
+Checking these details can feel very slow. It might even feel like you are creating problems instead of solving them. But these checks are the only way to keep the final report honest.
+
+Without them, you just end up with a beautiful screen that tells a confident story about something that never really happened.",pass,"Definition questions, active-users example, changed rules and mixed data all in excerpts.",pass,Both checks pass: the answer addresses how to check metric definitions and is supported by the excerpts.
+in_scope-015 run 2,How can I tell whether strange data is an error or something meaningful?,"Isaac says not to remove strange values just because they look inconvenient. First, study the pattern and ask what caused it. Check whether the unusual data is linked to a person, group, time, business rule or workaround. Missing values can also carry meaning, especially when they cluster in one group.
+
+Then look outside the table. Talk to customers and the team, and check notes or daily records. These can reveal system problems, unusual users, business changes or other reasons the data looks strange. The key question is: “Why is this messy?”","[chunk_id: the-dirty-secret-every-senior-analyst#0] The Dirty Secret Every Senior Analyst Knows (But Won't Tell You) > The Dirty Secret Every Senior Analyst Knows (But Won't Tell You)
+Data doesn't just appear. Humans create it.
+
+And humans are weird, lazy, creative, and unpredictable.
+
+That means every dataset you open is a mirror.
+
+Not just of business processes, but of human behavior, pressure, habits, and workarounds. Clean it too fast, and you risk scrubbing away the most important clues.
+
+This is the side of data work nobody talks about in tutorials.
+
+The part that feels more like psychology than Python.
+
+Let’s get into it.
+
+In a sales dataset, if all the missing commission amounts belong to one manager, that's not a data quality issue. That's either a problem with their reporting system or they're hiding something.
+
+If survey responses are missing for specific age groups, that's not random. That's telling you something about how those people interact with your survey method.
+
+If timestamps cluster around certain hours, that's revealing when people actually use your product vs. when you think they do.
+
+The pattern in what's NOT there is just as important as what IS there.
+
+That person who bought 847 units of your product. Don't remove them. Find them. They might be running a business you didn't know existed.
+
+Those users with session times of 14 hours. They're not errors. They're power users who left your app open, which tells you something important about your product's stickiness.
+
+---
+
+[chunk_id: the-gap-between-what-happened-and#3] The Gap Between What Happened And Why > What To Check After You See The Pattern
+If your data cannot explain the reason, you need to look outside the table.
+
+Talking to customers can tell you things no math ever will. When people stop buying your product, they rarely fill out a form to tell you why. But if you talk to ten of them, you will start to hear the same story over and over.
+
+That kind of truth never shows up on a dashboard.
+
+Your own team is another great place to look. If sales dropped last month, ask the sales team what was happening. Maybe they did not have enough workers. Maybe a big deal fell apart at the last minute, or everyone was stuck in training.
+
+The data only shows the result. The team knows what happened behind the result.
+
+Simple notes and daily records can also explain what the numbers miss. If a business changed its prices or switched delivery trucks during the time you are studying, that completely changes how you read the numbers.
+
+---
+
+[chunk_id: the-dirty-secret-every-senior-analyst#3] The Dirty Secret Every Senior Analyst Knows (But Won't Tell You) > People Work Around Broken Systems
+When I see text like ""see notes field"" in a number column, I don't just convert it to null. I go find the notes field. Someone was trying to tell me something important that didn't fit in your neat little database schema.
+
+That creative use of the ""other"" category is someone's telling you your options are incomplete.
+
+The Questions Nobody Asks.
+
+Instead of ""How do I clean this data?"" ask:
+
+- ""What was the person entering this data thinking?""
+
+- ""What business rule created this weird pattern?""
+
+- ""Who benefits if I clean this vs. keep it messy?""
+
+- ""What story does the mess tell that the clean data hides?""
+
+- ""Am I cleaning this because it's wrong, or because it's inconvenient?""
+
+The most dangerous question in data analysis is ""How do I make this cleaner?"" The most valuable question is ""Why is this messy?""",pass,"Pattern-before-removal, missing-value clusters, looking outside the table and ""Why is this messy?"" all supported.",pass,"The answer addresses how to investigate strange data, and its advice is supported by the excerpts."
+in_scope-012 run 5,Which chart should I use to make my data easy to compare?,"To make data easy to compare, use a bar chart. A sorted bar chart works well for comparing categories. If you need to compare values side by side across groups, use a grouped bar chart, as long as you have only a few groups and bars. Start with the question you want the chart to answer, rather than the data itself.","[chunk_id: the-bar-chart-mistake-most-analysts#2] The Bar Chart Mistake Most Analysts Make > Grouped Bars Make Comparing Easy
+A grouped bar chart is best when you want to compare values side by side.
+
+In this chart, bars sit beside each other in small groups. This makes it easier for the reader to compare their heights. The bars all start from the same flat line at the bottom, so your eyes can quickly see which one is taller.
+
+For example, let’s say you are comparing sales for three products across four regions. A grouped bar chart can work well because the reader can look at each region and compare the products beside each other.
+
+This type of chart helps answer questions like: Which product sold more in each region? Which region performed best for each product? How do the products compare within the same group?
+
+But grouped bar charts can also become messy fast. If you have too many groups, or too many bars inside each group, the chart becomes crowded. The reader has to keep checking the legend, looking back at the bars, and trying to remember which color means what.
+
+At that point, the chart is doing too much.
+
+A grouped bar chart works best when the comparison is simple. A few groups. A few bars in each group. Clear labels. Easy reading.
+
+---
+
+[chunk_id: the-problem-with-treemaps#5] The Problem With Treemaps > Simple Charts Are Not a Step Down
+A lot of dashboard problems start when people try to make a chart look more advanced than the message requires.
+
+But simple charts are not lazy. Simple charts often respect the reader more. They save time, reduce confusion, and make the main point easier to see.
+
+If you want to compare categories, use a sorted bar chart.
+
+If you want to show change over time, use a line chart.
+
+If you want exact values, use a clean table.
+
+If you want to show parts of a whole for a few groups, use a 100% stacked bar chart.
+
+If you want to show positive and negative values, use a bar chart with a clear zero line.
+
+These charts may not look as flashy as a treemap, but they help the reader understand the data faster, which is the whole point of sharing data in the first place.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#1] The Chart Building Process That Changed How I Present Data > Step 1: Analyze Requirements & Choose Your Chart Type
+This is where most people mess up. They start with the data instead of starting with the question.
+
+Here's what you need to ask yourself:
+
+What story am I trying to tell?
+
+- Are you comparing things? (Bar charts, column charts)
+
+- Are you showing change over time? (Line charts, area charts)
+
+- Are you displaying parts of a whole? (Pie charts, donut charts)
+
+- Are you showing relationships? (Scatter plots, bubble charts)
+
+Who is my audience?
+
+- Are they data people or regular folks?
+
+- How much time do they have to look at this?
+
+- What level of detail do they need?
+
+What action do I want them to take?
+
+- Should they investigate something?
+
+- Do they need to make a decision?
+
+- Are you just informing them?
+
+Once you answer these questions, the right chart type becomes obvious.",pass,"Sorted bar, grouped bar with few groups, and starting from the question are all in excerpts.",pass,Both checks pass: the answer recommends charts for comparison and follows the excerpts.
+in_scope-018 run 3,How should I present disappointing results without making everyone defensive?,"Present the results calmly and start with what the data shows, not with an apology or dramatic warning. Add context to show you investigated the issue thoroughly, including trends, comparisons and other relevant analysis. Then explain the options and recommend the path you think is best, with evidence behind it. This keeps people focused on the problem rather than feeling blamed. For disappointing but non-critical updates, you can start with the bad news and end with something positive, especially when you are not asking for immediate action.","[chunk_id: nobody-wants-to-hear-bad-news-but#1] Nobody Wants to Hear Bad News, But Here's How to Tell Them Anyway > 1. Start with the Facts, Not Feelings
+This is rule number one.
+
+Don’t walk in saying “I have terrible news” or “This is really bad.”
+
+Don’t apologize. Don’t sugarcoat it. Don’t make it dramatic. Just say what the data shows.
+
+Bad way: “Guys, I’m really sorry, but the numbers this quarter are terrible. I know you’re not going to like this...”
+
+Good way: “The data shows our customer retention dropped 15% last quarter.”
+
+The first one makes everyone nervous before you even share the number. The second one is calm, clear, and factual.
+
+When you stay neutral, people stay focused on the problem instead of their emotions.
+
+---
+
+[chunk_id: nobody-wants-to-hear-bad-news-but#3] Nobody Wants to Hear Bad News, But Here's How to Tell Them Anyway > 3. Show You Investigated Thoroughly
+This step builds trust.
+
+When you present bad news, people want to know: did you actually do the work? Or are you just showing me one chart and guessing?
+
+Prove that you dug deep.
+
+Show them you analyzed the data from multiple angles. That you looked at trends over time. That you compared it to benchmarks or competitors.
+
+Example: “I looked at 500 customer exit surveys, analyzed purchasing patterns across 3 years, and compared our numbers against industry benchmarks.”
+
+When people see you did the work, they trust your conclusions. And that makes them more willing to listen to your recommendations.
+
+---
+
+[chunk_id: nobody-wants-to-hear-bad-news-but#5] Nobody Wants to Hear Bad News, But Here's How to Tell Them Anyway > 5. Recommend a Path Forward
+Don’t just list options and walk away. Take a position. Tell them which option you think is best and why.
+
+This is where your expertise matters.
+
+You’re the one who analyzed the data. You’re the one who understands the trends. You’re the one who knows what’s likely to work.
+
+So say it.
+
+Example: “I recommend Option B because our research shows customers value quality over price. 68% of exit surveys mentioned service issues, not cost. If we improve service, we can keep our pricing and still win customers back.”
+
+When you make a clear recommendation backed by data, you make it easier for leaders to decide.
+
+These five steps turn a scary presentation into a productive conversation. But there’s one more thing you need to understand...
+
+Presenting bad news will never be fun. But it doesn’t have to be scary.
+
+When you walk in with solid analysis, clear context, real solutions, and a recommended path forward, you’re not just delivering bad news.
+
+You’re solving problems.
+
+And that’s what good data analysts do.
+
+So next time you have to present something nobody wants to hear, remember to start with the facts, add context, show your work, present options, and recommend a solution.
+
+Do that, and you won’t just survive the meeting. You’ll walk out with people thanking you for catching the problem early.
+
+---
+
+[chunk_id: ive-got-some-good-news-and-bad-news#3] I’ve Got Some Good News and Bad News. > Start With Bad, End With Good
+This is your relationship move. It’s gentler. It’s kinder. People genuinely prefer it because you’re ending on a positive note.
+
+When to use it:
+
+- Team updates and casual stand-ups
+
+- Sharing results that are disappointing but not critical
+
+- Any time you’re NOT asking for immediate action
+
+The bad news gets processed first, then the good news acts like a buffer. It’s the emotional reset that helps people leave feeling okay.",pass,"Facts not feelings, showing the investigation, options and recommendation, and bad-then-good for non-critical news all supported.",fail,"The answer addresses the question, but the claim that this approach keeps people from “feeling blamed” is not stated or clearly implied by the excerpts."
+in_scope-026 run 3,How can I make my charts easier to understand at a glance?,"Isaac recommends starting simple and adding only what helps people understand the point. Choose the chart type that fits the message, such as a sorted bar chart for comparisons or a line chart for change over time. Make the data stand out, keep axes and gridlines subtle, and label only what matters. Use readable fonts, strong contrast, and colors with purpose. Add useful context, such as benchmarks or targets, and format numbers simply, like 2.8M instead of 2,847,293. Keep helpful elements, such as light gridlines or an arrow to a key insight. If one chart feels confusing, use two clear charts instead.","[chunk_id: the-beginners-guide-to-cleaner-data#0] The Beginner’s Guide to Cleaner Data Visuals > The Beginner’s Guide to Cleaner Data Visuals
+Not every chart needs to be perfect. But every chart should be easy to read.
+
+That doesn't mean using bold colors or flashy designs. It means making smart, simple choices that help your message land. Small things, like font size or spacing, can do a lot of heavy lifting.
+
+And you don't need to be a designer to get it right.
+
+These six tweaks are simple, practical, and tested. Try them out, and see how your charts feel less noisy and more helpful.
+
+---
+
+[chunk_id: youre-probably-deleting-too-much#4] You're Probably Deleting Too Much From Your Charts > Clarity is King
+We need to change our goal.
+
+Don’t try to use the least amount of ink possible. Instead, try to make it easy to read
+
+Think about the “Signal-to-Noise” ratio. The Signal is the data and the clues that help you understand the numbers. The Noise is anything that distracts you.
+
+A light gridline that helps you read a number is a signal.
+
+An arrow pointing to a key insight is a signal.
+
+If adding a little extra ink, like a border or a background color, helps your boss understand the chart in two seconds instead of ten, then do it.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#4] The Chart Building Process That Changed How I Present Data > Step 4: Build Your Chart
+Okay, now you get to do the fun part. But even here, there's a right way and a wrong way.
+
+Start simple. Don't add every bell and whistle your tool offers. Build the most basic version of your chart first, then add complexity only if it helps tell your story better.
+
+Focus on the data, not the decorations. Your chart should highlight the important stuff and fade everything else into the background. That means:
+
+- Make your data stand out with color and size
+
+- Make your axes and gridlines light and subtle
+
+- Only label the things that matter
+
+- Remove any elements that don't add value
+
+Make it readable. Use fonts big enough to read easily. Pick colors that work for colorblind folks. Make sure there's enough contrast.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#5] The Chart Building Process That Changed How I Present Data > Step 5: Format Like a Pro
+This is where good charts become great charts. The formatting is what makes people want to keep looking and actually understand what you're showing them.
+
+Clean up your axes. Round your numbers to sensible values. If you're showing millions of dollars, don't display 2,847,293. Show 2.8M instead. Your audience will thank you.
+
+Add context. A line that goes up is nice. A line that goes up 23% while the industry average went down 5% is a story. Add reference lines, benchmarks, or targets that help people understand if your numbers are good or bad.
+
+Use color with purpose. Don't make everything rainbow colored just because you can. Use color to highlight what's important. Make the good stuff green and the bad stuff red only if that makes sense. Sometimes gray is your best friend.
+
+---
+
+[chunk_id: the-problem-with-treemaps#5] The Problem With Treemaps > Simple Charts Are Not a Step Down
+A lot of dashboard problems start when people try to make a chart look more advanced than the message requires.
+
+But simple charts are not lazy. Simple charts often respect the reader more. They save time, reduce confusion, and make the main point easier to see.
+
+If you want to compare categories, use a sorted bar chart.
+
+If you want to show change over time, use a line chart.
+
+If you want exact values, use a clean table.
+
+If you want to show parts of a whole for a few groups, use a 100% stacked bar chart.
+
+If you want to show positive and negative values, use a bar chart with a clear zero line.
+
+These charts may not look as flashy as a treemap, but they help the reader understand the data faster, which is the whole point of sharing data in the first place.
+
+---
+
+[chunk_id: stop-using-dual-axis-charts-unless#7] Stop Using Dual Axis Charts (Unless You Read This First) > Two Separate Charts
+Sometimes the easiest answer is the best one. Two clear charts often beat one confusing chart every single time.
+
+Here's What I Think.
+
+Look, I’m not going to tell you to never use dual axis charts. That would be too simple.
+
+But I will say this: if you’re thinking about using one, pause for a second.
+
+Ask yourself: “Am I using this because it genuinely tells the story better? Or am I using it because I want to fit more stuff on one slide?”
+
+Most of the time, the two separate charts will win.
+
+The goal isn’t to make charts that look impressive. The goal is to help people understand your data quickly and correctly.
+
+If a chart makes things more confusing, even if it looks cool, it’s not doing its job.",pass,"Start simple, chart choice, subtle axes, contrast, context, 2.8M, helpful ink and two charts over one all in excerpts.",pass,"The answer addresses at-a-glance clarity, and its recommendations are supported by the excerpts."
+in_scope-059 run 2,What should I compare a business result against to tell if it’s actually good?,"Compare the result against the baseline that fits the business question. That might be last month, the same time last year, the company target, or an industry average.
+
+Use targets to judge whether the business met its aim, past results to show progress, and the same period last year when seasonality affects the numbers. The key is to use the comparison that gives the clearest view of reality, not simply the easiest one.","[chunk_id: stop-comparing-everything-to-last#0] Stop Comparing Everything To Last Month > Stop Comparing Everything To Last Month
+If a company makes $120,000 in sales this month, that sounds useful. But is it a good result or a bad one? You cannot really tell yet.
+
+Maybe the company made $90,000 last month. Now $120,000 looks like an improvement. Maybe the goal was $150,000. Now that exact same number looks disappointing.
+
+Or maybe the company made $140,000 at the same time last year. Now the business may actually be falling behind.
+
+All of these stories use the exact same $120,000.
+
+The number did not change at all. The comparison did. That single choice can completely change the message you share with the business.
+
+---
+
+[chunk_id: stop-comparing-everything-to-last#3] Stop Comparing Everything To Last Month > Getting The Message Right
+Great data analysis is never about finding the most impressive percentage.
+
+It is about finding the baseline that gives people the clearest view of reality.
+
+Sometimes that means comparing with last month. Other times, the company target matters more.
+
+Every choice you make shapes the final message you deliver.
+
+Before you explain whether a number is good or bad, make sure you are comparing it with the thing that actually matters.
+
+---
+
+[chunk_id: stop-comparing-everything-to-last#2] Stop Comparing Everything To Last Month > Now Compare It With The Target
+Comparing past performance helps, but company targets can add more context.
+
+Past performance tells you where the business has been.
+
+Targets tell you where the business wanted to go.
+
+Suppose a marketing team brings in 8,000 new leads. Last month, it brought in 6,000. That increase looks great on a chart.
+
+But if the target was 10,000 leads, the result looks different.
+
+The team is definitely improving, but they still missed the mark. Showing both sides helps leaders see the progress and understand what still needs to improve.
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#4] Eight Questions Every Dashboard Must Answer > Question 4: How Much?
+This is the one question most dashboards actually answer well. Numbers everywhere! Charts galore!
+
+But here's the thing: raw numbers without context are just trivia. ""We had 1,247 website visitors"" doesn't mean much by itself.
+
+The real question is whether 1,247 is good, bad, or completely normal. Which brings us to...
+
+Question 5: Compared to What?.
+
+This is where most dashboards start falling apart. They show you current numbers but forget to give you anything to compare them to.
+
+Comparison is what turns data into insight. Here are the comparisons that actually matter:
+
+- Compared to last month/quarter/year: Shows trends
+
+- Compared to our goal: Shows performance
+
+- Compared to last year same time: Accounts for seasonality
+
+- Compared to industry average: Shows competitive position
+
+Without comparison, you're just looking at numbers in isolation. With comparison, you can actually judge whether those numbers are good or bad.
+
+Every important metric needs at least one comparison point. If your dashboard shows current sales, also show last month's sales. If it shows customer satisfaction, include your target score.
+
+---
+
+[chunk_id: stop-comparing-everything-to-last#1] Stop Comparing Everything To Last Month > Not All Comparisons Say The Same Thing
+There is no single comparison that works for every report.
+
+Many people like to compare the current month to the previous month because it is very easy to calculate. But this comparison does not always give the full picture because some businesses naturally rise and fall during the year.
+
+Retail stores sell more during the holidays, and travel companies get much busier in the summer.
+
+If you compare a busy holiday month with a quiet fall month, a big jump in sales may simply be part of the normal yearly pattern.
+
+In cases like this, comparing this month with the same month last year may tell a clearer story.
+
+The comparison must always fit the real business question.
+
+And sometimes the best comparison is not another time period at all.",pass,"Last month, last year, target and industry average baselines and fitting the question all supported.",pass,Both checks pass: the answer addresses the question and its comparisons are supported by the excerpts.
+in_scope-008 run 1,What should I include so my dashboard actually helps people make decisions?,"Include the information people need to move from insight to action. Isaac says a useful dashboard should answer eight questions: what happened, when, where, how much, compared to what, why, who cares, and what next.
+
+Start with the main question, keep the current situation clear within five seconds, group related metrics, show status clearly, and hide detail behind drill-downs. Add context for unusual patterns, links to deeper analysis, recommended actions for different scenarios, and links to the tools or processes needed to act.
+
+Design the dashboard around the decisions it must support, not around showing every available metric.","[chunk_id: eight-questions-every-dashboard-must#7] Eight Questions Every Dashboard Must Answer > Question 8: What Next?
+This is the big one. The question that separates useful dashboards from pretty wall decorations.
+
+After someone looks at your dashboard, what should they do? If the answer is ""nothing"" or ""I don't know,"" then you've built a reporting tool, not a decision-making tool.
+
+Great dashboards point toward action. They don't just show problems; they suggest solutions. They don't just display metrics; they highlight opportunities.
+
+Include recommended actions for different scenarios. Add links to relevant tools or processes. Design alerts that connect to workflows. Make the path from insight to action as short as possible.
+
+---
+
+[chunk_id: the-best-dashboard-youll-ever-use#4] The Best Dashboard You’ll Ever Use Has Only 4 Metrics > How to Apply This to Your Dashboards
+So how do you make your data dashboards more like car dashboards? Here are some practical steps:
+
+Start with the core question. What's the one most important thing this dashboard needs to answer? That's your speedometer. Everything else is secondary.
+
+Use the 5-second rule. Someone should be able to look at your dashboard and understand the current situation in five seconds or less. If they can't, you've got too much going on.
+
+Group related information. Just like car dashboards group engine-related warnings together, group your related metrics. Don't scatter similar information all over the place.
+
+Make status clear. Use colors, icons, and visual cues to show whether things are good, bad, or need attention.
+
+Hide the details. Not everything needs to be visible all the time. Let people drill down into details when they need them, but keep the main view clean.
+
+The hardest part of building better dashboards isn’t technical. It’s mental.
+
+It’s the ability to not show everything. To trust that clarity beats completeness. To design with purpose, not panic.
+
+Remember, the goal isn't to show off how much data you can collect.
+
+The goal is to help people make better decisions, faster.
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#0] Eight Questions Every Dashboard Must Answer > Eight Questions Every Dashboard Must Answer
+Every useful dashboard needs to answer eight simple questions. I keep these written on a sticky note next to my monitor because they're that important:
+
+- What happened?
+
+- When?
+
+- Where?
+
+- How much?
+
+- Compared to what?
+
+- Why?
+
+- Who cares?
+
+- What next?
+
+These aren't just nice-to-have features. They're the foundation of every decision your dashboard needs to support.
+
+Miss one, and you've got a pretty picture that doesn't drive action.
+
+Let's dig into each question and see why they matter.
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#8] Eight Questions Every Dashboard Must Answer > Building Better Dashboards
+The good news? Once you know what questions to ask, building better dashboards becomes much easier.
+
+Start every dashboard project by writing down these eight questions. For each chart you plan to include, make sure you can answer at least five of them. If you can't, either redesign the chart or reconsider whether you need it.
+
+The goal isn't to cram all eight answers into every single chart. The goal is to make sure your dashboard as a whole addresses all eight questions for the decisions it needs to support.
+
+Which of these eight questions does your team skip most often? Take a look at your current dashboards and see where the gaps are.
+
+The answers might surprise you. And fixing those gaps might be the difference between dashboards that get used and dashboards that get ignored.
+
+Because at the end of the day, the best dashboard isn't the prettiest one. It's the one that helps people make better decisions faster. And that only happens when you answer all eight questions that matter.
+
+---
+
+[chunk_id: eight-questions-every-dashboard-must#5] Eight Questions Every Dashboard Must Answer > Question 6: Why?
+Here's where things get interesting. And where most dashboards completely give up.
+
+Your dashboard shows that sales dropped 15% last month. Great. But why did that happen? Was it seasonal? Did a competitor launch something new? Did we change our pricing?
+
+Most dashboard builders think ""why"" isn't their job. They're wrong. You don't need to solve every mystery, but you should help people start asking the right questions.
+
+Use annotations to highlight unusual patterns. Add context boxes that explain known factors. Include links to deeper analysis. Give people a starting point for investigation.",pass,"Eight questions, car-dashboard steps, why context and what-next actions all from excerpts.",pass,Both checks pass: the answer addresses decision-useful dashboard content and is supported by the excerpts.
+in_scope-046 run 3,How can I explain charts so people quickly understand the main takeaway?,"Write the main finding in the chart title, like a headline. This gives people the answer before they study the data. Use annotations for big spikes, dips, goals, unusual patterns and key takeaways. Add context with benchmarks, targets or reference lines so people can tell whether a result is good or bad. Keep the chart simple, highlight only what matters, and remove decoration that does not help. Choose the chart type that fits the message, such as a sorted bar chart for category comparisons or a line chart for change over time.","[chunk_id: your-chart-cant-explain-itself-but#4] Your Chart Can't Explain Itself (But It Should) > When Should You Use Them?
+You don’t need to write a novel on every slide. That would be messy. But you should use annotations for the big moments:
+
+- Spikes and Dips: Did the numbers jump or crash? Explain what happened (e.g., “Server outage” or “Holiday Sale”).
+
+- Goals: If you are trying to hit a target, draw a line and label it “Goal.”
+
+- Key Takeaways: If there is one thing you want people to remember, write it right on the chart.
+
+- Weird patterns: If something strange shows up in the data, explain it.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#5] The Chart Building Process That Changed How I Present Data > Step 5: Format Like a Pro
+This is where good charts become great charts. The formatting is what makes people want to keep looking and actually understand what you're showing them.
+
+Clean up your axes. Round your numbers to sensible values. If you're showing millions of dollars, don't display 2,847,293. Show 2.8M instead. Your audience will thank you.
+
+Add context. A line that goes up is nice. A line that goes up 23% while the industry average went down 5% is a story. Add reference lines, benchmarks, or targets that help people understand if your numbers are good or bad.
+
+Use color with purpose. Don't make everything rainbow colored just because you can. Use color to highlight what's important. Make the good stuff green and the bad stuff red only if that makes sense. Sometimes gray is your best friend.
+
+---
+
+[chunk_id: your-chart-title-is-the-first-insight#1] Your Chart Title Is the First Insight > Giving The Answer Before They Ask
+Every chart needs attention, but most people scan reports quickly. The title has a big job because it tells the reader where to look and what to notice.
+
+Many charts waste this important space. They use plain labels like “Monthly Store Visits” or “Customer Ages.”
+
+Those words are true, but they only describe the chart. They do not explain what the numbers mean.
+
+A better way is to write titles that say the main finding.
+
+Once you know the difference, the fix becomes simple: write the title like a headline.
+
+Think about how you read a newspaper. The headline gives you the biggest news right at the top. The article underneath gives you the proof and extra details.
+
+Your charts should work the same way. You want to share the answer before people study the data.
+
+If you found a big drop in sales during the summer, state that clearly. A title like “Summer Sales Fell By Half Due To Supply Delays” is helpful because the audience knows exactly why they are looking at the page.
+
+The bars and lines below support the point you made in the title.
+
+---
+
+[chunk_id: the-problem-with-treemaps#5] The Problem With Treemaps > Simple Charts Are Not a Step Down
+A lot of dashboard problems start when people try to make a chart look more advanced than the message requires.
+
+But simple charts are not lazy. Simple charts often respect the reader more. They save time, reduce confusion, and make the main point easier to see.
+
+If you want to compare categories, use a sorted bar chart.
+
+If you want to show change over time, use a line chart.
+
+If you want exact values, use a clean table.
+
+If you want to show parts of a whole for a few groups, use a 100% stacked bar chart.
+
+If you want to show positive and negative values, use a bar chart with a clear zero line.
+
+These charts may not look as flashy as a treemap, but they help the reader understand the data faster, which is the whole point of sharing data in the first place.
+
+---
+
+[chunk_id: the-chart-building-process-that-changed#4] The Chart Building Process That Changed How I Present Data > Step 4: Build Your Chart
+Okay, now you get to do the fun part. But even here, there's a right way and a wrong way.
+
+Start simple. Don't add every bell and whistle your tool offers. Build the most basic version of your chart first, then add complexity only if it helps tell your story better.
+
+Focus on the data, not the decorations. Your chart should highlight the important stuff and fade everything else into the background. That means:
+
+- Make your data stand out with color and size
+
+- Make your axes and gridlines light and subtle
+
+- Only label the things that matter
+
+- Remove any elements that don't add value
+
+Make it readable. Use fonts big enough to read easily. Pick colors that work for colorblind folks. Make sure there's enough contrast.
+
+---
+
+[chunk_id: your-chart-cant-explain-itself-but#0] Your Chart Can't Explain Itself (But It Should) > Your Chart Can't Explain Itself (But It Should)
+You won’t always be there to explain your chart.
+
+You might give a great presentation today. But an hour later, your slide deck gets emailed around. Someone opens it on their phone. Someone skims it between meetings. Someone skips your notes and looks straight at the charts.
+
+Will they understand why sales spiked in May? Will they get why traffic dropped in October?
+
+Probably not.
+
+This is where most charts fail. But there is a simple fix: Annotations.",pass,"Headline titles, annotations, reference lines, simplicity and chart choice all supported.",pass,"The answer addresses how to make the takeaway clear, and its advice is supported by the excerpts."
+in_scope-045 run 2,How should I present my analysis so people understand the main takeaway quickly?,"Isaac recommends leading with the answer, not the process. Start by stating the main problem, then share what the data shows, and finish with one clear takeaway explaining why it matters.
+
+Put the main discovery on the first slide, and write chart titles like headlines that state the finding. Use annotations for key takeaways, unusual patterns, spikes and dips. Adjust the level of detail to your audience: executives need impact and actions, while analysts may need more method and detail.","[chunk_id: the-reason-your-projects-are-getting#3] The Reason Your Projects Are Getting Ignored > Three Steps To Explain Your Work
+You do not need to write a lot to make your point clear. The goal is to make the post easy to follow. You want the reader to understand why it matters right away. A few short lines can do that.
+
+First, start with the main problem. Tell the reader what you were trying to figure out.
+
+Next, share what you found in the data.
+
+Finally, give them one clear takeaway. Tell them why the result matters.
+
+These three simple parts take less than a hundred words to write. They help your project feel clear and easier to understand.
+
+---
+
+[chunk_id: nobody-cares-how-hard-your-sql-query#3] Nobody Cares How Hard Your SQL Query Was > Do Not Hide The Best Part
+The fix is simpler than it sounds. Put the most important discovery on the very first slide. Tell the room exactly what the numbers say. If the data shows a way to cut costs or flag a risk, say that immediately. Do not make people wait until the end for the point.
+
+This same idea shows up in business writing too. Barbara Minto’s Pyramid Principle is built on a simple rule: lead with the main point, then support it.
+
+Business audiences do not want a long build-up. They want the main point first, so they know why it matters.
+
+This applies to portfolio projects too. If someone is reading your case study, the first thing they should understand is what you found and why it matters, not how you queried the database.
+
+---
+
+[chunk_id: your-chart-title-is-the-first-insight#1] Your Chart Title Is the First Insight > Giving The Answer Before They Ask
+Every chart needs attention, but most people scan reports quickly. The title has a big job because it tells the reader where to look and what to notice.
+
+Many charts waste this important space. They use plain labels like “Monthly Store Visits” or “Customer Ages.”
+
+Those words are true, but they only describe the chart. They do not explain what the numbers mean.
+
+A better way is to write titles that say the main finding.
+
+Once you know the difference, the fix becomes simple: write the title like a headline.
+
+Think about how you read a newspaper. The headline gives you the biggest news right at the top. The article underneath gives you the proof and extra details.
+
+Your charts should work the same way. You want to share the answer before people study the data.
+
+If you found a big drop in sales during the summer, state that clearly. A title like “Summer Sales Fell By Half Due To Supply Delays” is helpful because the audience knows exactly why they are looking at the page.
+
+The bars and lines below support the point you made in the title.
+
+---
+
+[chunk_id: stop-building-standard-portfolio#2] Stop Building Standard Portfolio Projects > The Five Parts Every Project Needs
+A business case follows a simple path. A great portfolio piece should do the same.
+
+The Problem
+
+Start with a specific goal. Do not just say you analyzed sales data. State that a retail brand needs to know which products are selling poorly so they can order smarter next month.
+
+The Data
+
+Be honest about your data. Explain where the data came from and what it is missing. This shows that you are careful, and it helps the reader trust your work.
+
+The Analysis
+
+Walk through your steps. You do not need to show every single thing you tried. Just share the parts that changed your direction and moved the project forward. Cut the noise so the reader stays focused.
+
+The Findings
+
+Keep your results tied to what the numbers actually show. Do not stretch your findings or make claims the data cannot support.
+
+The Recommendation
+
+This is the most important part. Tell the reader what action they should take based on your work. Teams need analysts who can help them decide what to do next.
+
+---
+
+[chunk_id: your-chart-cant-explain-itself-but#4] Your Chart Can't Explain Itself (But It Should) > When Should You Use Them?
+You don’t need to write a novel on every slide. That would be messy. But you should use annotations for the big moments:
+
+- Spikes and Dips: Did the numbers jump or crash? Explain what happened (e.g., “Server outage” or “Holiday Sale”).
+
+- Goals: If you are trying to hit a target, draw a line and label it “Goal.”
+
+- Key Takeaways: If there is one thing you want people to remember, write it right on the chart.
+
+- Weird patterns: If something strange shows up in the data, explain it.
+
+---
+
+[chunk_id: nobody-reads-your-full-report-heres#4] Nobody Reads Your Full Report. Here's Why That's Okay > 2. Know Your Audience
+Are you presenting to executives who want the big picture? Or analysts who need the details? Different audiences need different levels of information.
+
+For executives: Focus on the business impact and recommended actions
+
+For analysts: Include more methodology and detailed findings
+
+For operations teams: Emphasize actionable insights they can implement",pass,"Main point first, problem-findings-takeaway, headline titles, annotations and audience detail all in excerpts.",pass,Both checks pass: the answer addresses how to communicate the takeaway quickly and is supported by the excerpts.
