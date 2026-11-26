@@ -24,7 +24,19 @@ class Settings(BaseSettings):
     openai_api_key: SecretStr | None = None
     admin_api_key: SecretStr | None = None
 
-    @field_validator("openai_api_key", "admin_api_key", mode="before")
+    # Langfuse tracing is optional. With both keys set, every chat turn is sent to Langfuse.
+    # Without them nothing is sent and the app works the same.
+    langfuse_public_key: str | None = None
+    langfuse_secret_key: SecretStr | None = None
+    langfuse_base_url: str = "https://cloud.langfuse.com"
+
+    @field_validator(
+        "openai_api_key",
+        "admin_api_key",
+        "langfuse_public_key",
+        "langfuse_secret_key",
+        mode="before",
+    )
     @classmethod
     def _clean_secret(cls, value: object) -> object:
         """Remove quotes and spaces around a key, and treat an empty value as not set.

@@ -159,3 +159,16 @@ the dash rule, are also enforced in code (`agent/style.py`), because a model can
 instruction. Quotes from the newsletter are never altered by this step.
 **Consequences.** The assistant sounds closer to the newsletter's author, but it still says it is
 an AI and still refers to Isaac in the third person (see decision 7).
+
+## 17. Trace every turn with Langfuse
+
+**Context.** The app logged each turn's total time, tokens and cost, but not what happened inside
+it. When a reply was slow or wrong, there was no way to see which step caused it.
+**Decision.** Send every chat turn to Langfuse as a trace, through Langfuse's LangChain callback
+(`agent/tracing.py`). LangGraph already reports each step to callbacks, so the graph and nodes
+didn't change. Turns from one conversation share a session id. Tracing is on only when both
+Langfuse keys are set.
+**Consequences.** Each turn shows its steps in order, every prompt and reply, the tokens and cost
+of each model call, and the time of each step. The first traced question took 41 seconds, and the
+trace showed 29 of them in the search step, which matches the stalled requests in decision 13.
+Questions visitors type are stored in Langfuse, so a deployment that turns tracing on should say so.

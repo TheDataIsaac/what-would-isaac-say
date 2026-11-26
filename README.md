@@ -98,6 +98,7 @@ Details, including the full graph and the life of one request, are in [docs/ARCH
 | Database | SQLite (WAL) through async SQLAlchemy 2.0, repository pattern | `db/` |
 | Tool interface | MCP server (`MCPServer`, stdio) | `mcp_server.py` |
 | Web interface | Streamlit, talking to the API over HTTP only | `ui/` |
+| Tracing | Langfuse, through its LangChain callback (optional, on when keys are set) | `agent/tracing.py` |
 | Code quality | ruff (lint and format), pytest, GitHub Actions CI | `tests/`, `.github/` |
 | Deployment | Multi-stage Dockerfile, compose files, Caddy for HTTPS, non-root user, healthchecks, spend caps | root, `deploy/` |
 
@@ -110,7 +111,7 @@ src/isaac_says/
   domain/              plain data shapes: posts, chunks, replies
   ingestion/           Substack client, cleaning, chunking, snapshot, pipeline
   retrieval/           vector index and embeddings
-  agent/               the LangGraph agent: state, nodes, graph, prompts, verification, service
+  agent/               the LangGraph agent: state, nodes, graph, prompts, verification, service, tracing
   db/                  tables, sessions, repository, conversation retention
   api/                 FastAPI app, routes, security, resources
   ui/                  Streamlit page and the API client it uses

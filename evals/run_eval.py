@@ -104,7 +104,8 @@ async def check_question(service: ChatService, judge: OpenAIClient, item: dict, 
 
 
 async def main(runs: int) -> None:
-    settings = get_settings()
+    # Hundreds of test turns would fill the Langfuse free plan, so tracing is off here.
+    settings = get_settings().model_copy(update={"langfuse_public_key": None})
     # Set up like the `ask` command: memory only, and unanswered questions are not saved.
     service, _ = build_chat_service(settings, checkpointer=InMemorySaver())
     judge = make_judge(settings)

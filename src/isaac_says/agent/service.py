@@ -10,6 +10,7 @@ from langchain_core.messages import HumanMessage
 from langgraph.graph.state import CompiledStateGraph
 from langgraph.types import Command
 
+from isaac_says.agent.tracing import Tracer
 from isaac_says.config import Settings
 from isaac_says.domain.models import RetrievedChunk
 from isaac_says.domain.replies import NeedsInputReply, Reply, ReplyAdapter
@@ -34,15 +35,20 @@ class TurnResult:
 
 
 class ChatService:
-    def __init__(self, graph: CompiledStateGraph, settings: Settings) -> None:
+    def __init__(self, graph: CompiledStateGraph, settings: Settings, tracer: Tracer) -> None:
         self._graph = graph
         self._settings = settings
+        self._tracer = tracer
 
     # Helpers
     @staticmethod
     def _config(thread_id: str) -> dict:
         # The thread id picks which saved conversation to use.
         return {"configurable": {"thread_id": thread_id}}
+
+    def _run_config(self, thread_id: str) -> dict:
+        # The same, plus the callbacks that record this turn as a trace (none if tracing is off).
+        return self._config(thread_id) | {"callbacks": self._tracer.callbacks()}
 
     async def _payload(self, thread_id: str, message: str):
         """Continue if the graph is waiting for an answer, otherwise start a new turn."""
@@ -88,8 +94,8 @@ class ChatService:
         thread_id = thread_id or uuid.uuid4().hex
         started = time.perf_counter()
         payload = await self._payload(thread_id, message)
-        with get_usage_metadata_callback() as usage_callback:
-            await self._graph.ainvoke(payload, self._config(thread_id))
+        with get_usage_metadata_callback() as usage_callback, self._tracer.turn(thread_id):
+            await self._graph.ainvoke(payload, self._run_config(thread_id))
         usage = self._usage_from(usage_callback.usage_metadata)
         return await self._read_result(thread_id, started, usage)
 
@@ -98,10 +104,10 @@ class ChatService:
         thread_id = thread_id or uuid.uuid4().hex
         started = time.perf_counter()
         payload = await self._payload(thread_id, message)
-        with get_usage_metadata_callback() as usage_callback:
+        with get_usage_metadata_callback() as usage_callback, self._tracer.turn(thread_id):
             # "updates" mode gives one item per finished step.
             async for update in self._graph.astream(
-                payload, self._config(thread_id), stream_mode="updates"
+                payload, self._run_config(thread_id), stream_mode="updates"
             ):
                 for node in update:
                     if not node.startswith("__"):  # skip the internal "__interrupt__" item
