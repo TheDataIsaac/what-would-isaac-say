@@ -16,6 +16,7 @@ evals/output/replies.jsonl, which check_judge.py reads.
 import argparse
 import asyncio
 import json
+import time
 from pathlib import Path
 
 from langgraph.checkpoint.memory import InMemorySaver
@@ -71,6 +72,7 @@ async def check_question(service: ChatService, judge: OpenAIClient, item: dict, 
         "kind": "",
         "correct": False,
         "cost": 0.0,
+        "seconds": None,  # how long the reply took, including any follow-up turns
         # Only filled in for newsletter answers:
         "answer": None,
         "excerpts": None,
@@ -78,6 +80,7 @@ async def check_question(service: ChatService, judge: OpenAIClient, item: dict, 
         "judge_cost": 0.0,
     }
     costs: list[float] = []
+    started = time.perf_counter()
     try:
         result = await ask(service, item["question"], costs)
     except Exception as error:  # one failed API call should not stop a long run
@@ -85,6 +88,7 @@ async def check_question(service: ChatService, judge: OpenAIClient, item: dict, 
         record["cost"] = sum(costs)  # turns that finished before the error still count
         return record
 
+    record["seconds"] = round(time.perf_counter() - started, 1)
     record["kind"] = result.reply.kind
     record["correct"] = result.reply.kind == EXPECTED[item["category"]]
     record["cost"] = sum(costs)

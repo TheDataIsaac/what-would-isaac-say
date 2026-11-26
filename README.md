@@ -118,7 +118,7 @@ src/isaac_says/
   mcp_server.py        the MCP server
   cli.py               the `isaac-says` command
 tests/                 pytest tests (no API key needed)
-evals/                 the 88 evaluation questions, the evaluation script, its judge and the judge check
+evals/                 the 88 evaluation questions, the evaluation script, its judge, the judge check and the model comparison
 docs/                  architecture, decisions, deployment
 deploy/proxy/          shared Caddy reverse proxy for the production server
 scripts/analytics.sql  SQL over the operational database
@@ -196,6 +196,29 @@ the noise.
 The single run on 10 November missed two newsletter questions. Over five runs, one of them
 (`in_scope-022`) failed 4 times out of 5 and the other (`in_scope-033`) never failed, so a single
 run can't tell an unlucky question from a broken one. The cause is described below.
+
+### Comparing models
+
+```bash
+uv run python evals/compare_models.py --runs 2   # three models, about 15 minutes, about $1
+```
+
+This asks the same 88 questions with each model in `MODELS` and has the same judge grade every
+answer, then writes one row per model to [evals/model_comparison.md](evals/model_comparison.md):
+how often each was right, the cost per 100 questions and the reply times.
+
+On 25 November 2026, 2 runs each:
+
+| Model | Right kind of reply | Judge passed | Cost per 100 questions | Median reply |
+|---|---|---|---|---|
+| `gpt-5.6-luna` (in use) | 99% | 97% | $0.084 | 6.9s |
+| `gpt-6-luna` | 98% | 100% | $0.036 | 6.1s |
+| `gpt-5.4-mini` | 99% | 98% | $0.325 | 6.8s |
+
+The accuracy ranges overlap for all three, so on this test they're equally accurate, and
+`gpt-6-luna` costs 43% of the current model. It isn't switched yet: it refused `in_scope-033`
+both times, a question the current model answered in all five of its runs, so that needs a look
+and a full five-run evaluation first.
 
 ## Limitations and what comes next
 
